@@ -391,7 +391,7 @@
 				<ul class="nav nav-list">
 					<li class="active open">
                         <a href="#" class="dropdown-toggle">
-							<i class="menu-icon fa fa-tag"></i>
+							<i class="menu-icon fa fa-laptop"></i>
 							<span class="menu-text"> Catalogos </span>
 
 							<b class="arrow fa fa-angle-down"></b>
@@ -410,7 +410,7 @@
 							</li>
 
                             <li class="">
-								<a href="#">
+								<a href="{% url 'catalogos:tecnologias_listar' %}">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Tecnologias
 								</a>
@@ -419,7 +419,7 @@
 							</li>
 
                             <li class="">
-								<a href="#">
+								<a href="{% url 'catalogos:personas_listar' %}">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Personas
 								</a>
@@ -428,7 +428,7 @@
 							</li>
 
                             <li class="">
-								<a href="#">
+								<a href="{% url 'catalogos:especialidad_listar' %}">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Especialidad
 								</a>
@@ -437,7 +437,7 @@
 							</li>
 
                             <li class="">
-								<a href="#">
+								<a href="{% url 'catalogos:estatus_listar' %}">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Estatus
 								</a>
@@ -446,7 +446,7 @@
 							</li>
 
                             <li class="">
-								<a href="#">
+								<a href="{% url 'catalogos:documentos_listar' %}">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Documentos
 								</a>
@@ -458,7 +458,7 @@
 
 					<li class="">
                         <a href="#" class="dropdown-toggle">
-							<i class="menu-icon fa fa-tag"></i>
+							<i class="menu-icon fa fa-folder-o"></i>
 							<span class="menu-text"> Documentacion </span>
 
 							<b class="arrow fa fa-angle-down"></b>
@@ -678,7 +678,7 @@
 								<!-- PAGE CONTENT BEGINS -->
                                 <form method="post">
                                     {% csrf_token %}
-                                    <h3>¿Desea eliminar el registro de {{ object.descripcion }}?</h3>
+                                    <h3>¿Desea eliminar el registro de <b>{{ object.descripcion }}</b>?</h3>
                                     <button class="btn btn-xs btn-danger" type="submit">Sí, eliminar</button>
                                     <a class= "btn btn-xs btn-default" href="{% url 'catalogos:catalogo_listar' %}">Cancelar</a>
                                 </form>

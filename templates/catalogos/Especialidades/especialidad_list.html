@@ -400,7 +400,7 @@
 						<b class="arrow"></b>
 
 						<ul class="submenu">
-							<li class="active">
+							<li class="">
 								<a href="{% url 'catalogos:catalogo_listar' %}">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Tipo
@@ -427,7 +427,7 @@
 								<b class="arrow"></b>
 							</li>
 
-                            <li class="">
+                            <li class="active">
 								<a href="{% url 'catalogos:especialidad_listar' %}">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Especialidad
@@ -554,7 +554,7 @@
 							<li>
 								<a href="#">Catalogos</a>
 							</li>
-							<li class="active">Tipo</li>
+							<li class="active">Especialidad</li>
 						</ul><!-- /.breadcrumb -->
 
 						<!-- #section:basics/content.searchbox -->
@@ -664,7 +664,7 @@
                         <!-- /section:settings.box -->
 						<div class="page-header">
 							<h1>
-								Catalogos <small>Tipos de Catalogos</small>
+								Catalogos <small>Catalogos de Especialidades</small>
 							</h1>
 						</div><!-- /.page-header -->
 
@@ -676,7 +676,7 @@
 								<!-- PAGE CONTENT BEGINS -->
 								<div class="row">
 									<div class="col-sm-12">
-                                       <a href="{% url 'catalogos:catalogo_nuevo' %}">
+                                       <a href="{% url 'catalogos:especialidad_nuevo' %}">
                                        <button class="btn btn-xs btn-primary pull-right">
                                             <i class="ace-icon fa fa-plus align-top bigger-125"></i>
                                             Agregar
@@ -684,30 +684,30 @@
 													<table class="table table-bordered">
                                                         <thead>
                                                             <tr>
-                                                                <td>id</td>
-                                                                <td>descripcion</td>
+                                                                <td>ID</td>
+                                                                <td>Descripcion</td>
                                                                 <td>Acciones</td>
                                                             </tr>
 
                                                         </thead>
                                                         <tbody>
-                                                            {% if object_list %}
-                                                            {% for catalogo in object_list %}
+                                                            {% if especialidades %}
+                                                            {% for especialidad in especialidades %}
                                                             <tr>
-                                                                <td>{{ catalogo.id }}</td>
-                                                                <td><a href="#"> {{ catalogo.descripcion }} </a></td>
+                                                                <td><a href="#"> {{ especialidad.id }} </a></td>
+                                                                <td><a href="#"> {{ especialidad.descripcion }} </a></td>
                                                                 <td>
                                                                     <div class="hidden-sm hidden-xs btn-xs btn-group">
 
-                                                                        <a class= "btn btn-xs btn-info" href="{% url 'catalogos:catalogo_editar' catalogo.id %}"><i class="ace-icon fa fa-pencil bigger-120"></i></a>
-                                                                        <a class= "btn btn-xs btn-danger" href="{% url 'catalogos:catalogo_eliminar' catalogo.id %}"><i class="ace-icon fa fa-trash-o bigger-120"></i></a>
+                                                                        <a class= "btn btn-xs btn-info" href="{% url 'catalogos:especialidad_editar' especialidad.id %}"><i class="ace-icon fa fa-pencil bigger-120"></i></a>
+                                                                        <a class= "btn btn-xs btn-danger" href="{% url 'catalogos:especialidad_eliminar' especialidad.id %}"><i class="ace-icon fa fa-trash-o bigger-120"></i></a>
                                                                     </div>
                                                                 </td>
                                                             </tr>
                                                             {% endfor %}
 
                                                             {% else %}
-                                                            <h1>No hay registros de catalogos</h1>
+                                                            <h1>No hay registros</h1>
                                                             {% endif %}
                                                         </tbody>
                                                     </table>

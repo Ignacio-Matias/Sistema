@@ -391,7 +391,7 @@
 				<ul class="nav nav-list">
 					<li class="activate open">
                         <a href="#" class="dropdown-toggle">
-							<i class="menu-icon fa fa-tag"></i>
+							<i class="menu-icon fa fa-laptop"></i>
 							<span class="menu-text"> Catalogos </span>
 
 							<b class="arrow fa fa-angle-down"></b>
@@ -410,7 +410,7 @@
 							</li>
 
                             <li class="active">
-								<a href="#">
+								<a href="{% url 'catalogos:tecnologia_listar' %}">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Tecnologias
 								</a>
@@ -419,7 +419,7 @@
 							</li>
 
                             <li class="">
-								<a href="#">
+								<a href="{% url 'catalogos:persona_listar' %}">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Personas
 								</a>
@@ -428,7 +428,7 @@
 							</li>
 
                             <li class="">
-								<a href="#">
+								<a href="{% url 'catalogos:especialidad_listar' %}">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Especialidad
 								</a>
@@ -437,7 +437,7 @@
 							</li>
 
                             <li class="">
-								<a href="#">
+								<a href="{% url 'catalogos:estatus_listar' %}">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Estatus
 								</a>
@@ -446,7 +446,7 @@
 							</li>
 
                             <li class="">
-								<a href="#">
+								<a href="{% url 'catalogos:documentos_listar' %}">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Documentos
 								</a>
@@ -459,7 +459,7 @@
 
 					<li class="">
                         <a href="#" class="dropdown-toggle">
-							<i class="menu-icon fa fa-tag"></i>
+							<i class="menu-icon fa fa-folder-o"></i>
 							<span class="menu-text"> Documentacion </span>
 
 							<b class="arrow fa fa-angle-down"></b>
@@ -702,7 +702,7 @@
                                                                     <div class="hidden-sm hidden-xs btn-xs btn-group">
 
                                                                         <a class= "btn btn-xs btn-info" href="{% url 'catalogos:tecnologia_editar' tecnologia.id %}"><i class="ace-icon fa fa-pencil bigger-120"></i></a>
-                                                                        <a class= "btn btn-xs btn-danger" href="#"><i class="ace-icon fa fa-trash-o bigger-120"></i></a>
+                                                                        <a class= "btn btn-xs btn-danger" href="{% url 'catalogos:tecnologia_eliminar' tecnologia.id %}"><i class="ace-icon fa fa-trash-o bigger-120"></i></a>
                                                                     </div>
                                                                 </td>
                                                             </tr>

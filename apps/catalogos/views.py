@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.core.urlresolvers import reverse_lazy
 from django.views.generic import ListView, UpdateView, DeleteView
 
-from  apps.catalogos.forms import *
+from apps.catalogos.forms import *
 from apps.catalogos.models import *
 
 # cat_tipo

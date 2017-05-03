@@ -22,6 +22,7 @@ from django.contrib.auth.views import login, logout_then_login, password_reset, 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^catalogos/', include('apps.catalogos.urls', namespace='catalogos')),
+    url(r'^documentacion/', include('apps.docuamentacion.urls', namespace='documentacion')),
     url(r'^usuario/', include('apps.usuario.urls', namespace='usuario')),
     url(r'^accounts/login/', login, {'template_name':'login.html'}, name='login'),
     url(r'^logout/', logout_then_login, name='logout'),

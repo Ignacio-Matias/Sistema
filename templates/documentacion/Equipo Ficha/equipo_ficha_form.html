@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 
-{% block title %}Tipo de Catalogo{% endblock %}
+{% block title %}Documentación | Equipo Fichas{% endblock %}
 {% block content %}
 	<body class="no-skin">
 		<!-- #section:basics/navbar.layout -->
@@ -389,7 +389,7 @@
 				</div><!-- /.sidebar-shortcuts -->
 
 				<ul class="nav nav-list">
-					<li class="active open">
+					<li class="">
                         <a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-laptop"></i>
 							<span class="menu-text"> Catalogos </span>
@@ -400,7 +400,7 @@
 						<b class="arrow"></b>
 
 						<ul class="submenu">
-							<li class="active">
+							<li class="">
 								<a href="{% url 'catalogos:catalogo_listar' %}">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Tipo
@@ -456,7 +456,7 @@
 						</ul>
 					</li>
 
-					<li class="">
+					<li class="active open">
                         <a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-folder-o"></i>
 							<span class="menu-text"> Documentacion </span>
@@ -485,7 +485,7 @@
 								<b class="arrow"></b>
 							</li>
 
-                            <li class="">
+                            <li class="active">
 								<a href="#">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Equipo Ficha
@@ -551,9 +551,9 @@
 							</li>
 
 							<li>
-								<a href="#">Catalogos</a>
+								<a href="#">Documentacion</a>
 							</li>
-							<li class="active">Tipo</li>
+							<li class="active">Equipo Ficha</li>
 						</ul><!-- /.breadcrumb -->
 
 						<!-- #section:basics/content.searchbox -->
@@ -663,10 +663,10 @@
                         <!-- /section:settings.box -->
 						<div class="page-header">
 							<h1>
-								Catalogos
+								Equipo Ficha
 								<small>
 									<i class="ace-icon fa fa-angle-double-right"></i>
-									Tipo de Catalogo
+									Formulario de Equipo Ficha
 								</small>
 							</h1>
 						</div><!-- /.page-header -->
@@ -676,10 +676,26 @@
 						<div class="row">
 							<div class="col-xs-12">
 								<!-- PAGE CONTENT BEGINS -->
-                                <form method="post">
+                                <form class="form-horizontal" method="post">
                                     {% csrf_token %}
-                                     <label class="col-sm-4 control-label no-padding-right" for="form-field-1">Descripcion </label>
-                                   {{form.descripcion}}
+                                    <div class="form-group">
+                                        <label class="col-sm-4 control-label no-padding-right" for="form-field-1">Ficha </label>
+                                        <div class="col-sm-3">
+											{{ form.ficha_id }}
+										</div>
+									</div>
+                                    <div class="form-group">
+                                        <label class="col-sm-4 control-label no-padding-right" for="form-field-1">Persona </label>
+										<div class="col-sm-3">
+											{{ form.cat_personas_id }}
+										</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-4 control-label no-padding-right" for="form-field-1">Especialidad </label>
+										<div class="col-sm-3">
+											{{ form.cat_especialidad_id }}
+										</div>
+                                    </div>
                                     <div class="clearfix form-actions">
 										<div class="col-md-offset-4 col-md-9">
 											<button class="btn btn-xs btn-info" type="submit">

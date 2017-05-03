@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 
-{% block title %}Tipo de Catalogo{% endblock %}
+{% block title %}Documentación | Equipo Fichas{% endblock %}
 {% block content %}
 	<body class="no-skin">
 		<!-- #section:basics/navbar.layout -->
@@ -389,7 +389,7 @@
 				</div><!-- /.sidebar-shortcuts -->
 
 				<ul class="nav nav-list">
-					<li class="active open">
+					<li class="">
                         <a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-laptop"></i>
 							<span class="menu-text"> Catalogos </span>
@@ -400,7 +400,7 @@
 						<b class="arrow"></b>
 
 						<ul class="submenu">
-							<li class="active">
+							<li class="">
 								<a href="{% url 'catalogos:catalogo_listar' %}">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Tipo
@@ -456,7 +456,8 @@
 						</ul>
 					</li>
 
-					<li class="">
+
+					<li class="activate open">
                         <a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-folder-o"></i>
 							<span class="menu-text"> Documentacion </span>
@@ -485,7 +486,7 @@
 								<b class="arrow"></b>
 							</li>
 
-                            <li class="">
+                            <li class="active">
 								<a href="#">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Equipo Ficha
@@ -551,9 +552,9 @@
 							</li>
 
 							<li>
-								<a href="#">Catalogos</a>
+								<a href="#">Documentacion</a>
 							</li>
-							<li class="active">Tipo</li>
+							<li class="active">Equipo Ficha</li>
 						</ul><!-- /.breadcrumb -->
 
 						<!-- #section:basics/content.searchbox -->
@@ -663,37 +664,69 @@
                         <!-- /section:settings.box -->
 						<div class="page-header">
 							<h1>
-								Catalogos
-								<small>
-									<i class="ace-icon fa fa-angle-double-right"></i>
-									Tipo de Catalogo
-								</small>
+								Equipo Ficha <small>Lista de Equipo Ficha</small>
 							</h1>
 						</div><!-- /.page-header -->
 
 
 						<!-- /section:settings.box -->
-						<div class="row">
+                        <div class="row">
+
 							<div class="col-xs-12">
 								<!-- PAGE CONTENT BEGINS -->
-                                <form method="post">
-                                    {% csrf_token %}
-                                     <label class="col-sm-4 control-label no-padding-right" for="form-field-1">Descripcion </label>
-                                   {{form.descripcion}}
-                                    <div class="clearfix form-actions">
-										<div class="col-md-offset-4 col-md-9">
-											<button class="btn btn-xs btn-info" type="submit">
-												<i class="ace-icon fa fa-check bigger-110"></i>
-												Guardar
-											</button>
-                                            <a href="javascript:history.back(-1);"><input type="button" class="btn btn-xs" value="volver"></a>
-										</div>
-									</div>
+								<div class="row">
+									<div class="col-sm-12">
+                                       <a href="{% url 'documentacion:equipo_ficha_nuevo' %}">
+                                       <button class="btn btn-xs btn-primary pull-right">
+                                            <i class="ace-icon fa fa-plus align-top bigger-125"></i>
+                                            Agregar
+                                        </button></a><br><br>
+													<table class="table table-bordered">
+                                                        <thead>
+                                                            <tr>
+                                                                <td>Ficha</td>
+                                                                <td>Persona</td>
+                                                                <td>Especialidad</td>
+                                                                <td>Acciones</td>
+                                                            </tr>
 
-                                </form>
-								<!-- PAGE CONTENT ENDS -->
-							</div><!-- /.col -->
-						</div><!-- /.row -->
+                                                        </thead>
+                                                        <tbody>
+                                                            {% if object_list %}
+                                                            {% for ficha in object_list %}
+                                                            <tr>
+                                                                <td>{{ ficha.ficha_id }}</td>
+                                                                <td>{{ ficha.cat_personas_id }}</td>
+                                                                <td>{{ ficha.cat_especialidad_id }}</td>
+                                                                <td>
+                                                                    <div class="hidden-sm hidden-xs btn-xs btn-group">
+
+                                                                        <a class= "btn btn-xs btn-info" href="{% url 'documentacion:equipo_ficha_editar' ficha.id %}"><i class="ace-icon fa fa-pencil bigger-120"></i></a>
+                                                                        <a class= "btn btn-xs btn-danger" href="{% url 'documentacion:equipo_ficha_eliminar' ficha.id %}"><i class="ace-icon fa fa-trash-o bigger-120"></i></a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            {% endfor %}
+
+                                                            {% else %}
+                                                            <h1>No hay registros</h1>
+                                                            {% endif %}
+                                                        </tbody>
+                                                    </table>
+                                                    <ul class="pager">
+                                                        <li>
+                                                            {% if page_obj.has_previous %}
+                                                             <a href="?page={{ page_obj.previous_page_number }}">Anterior</a>
+                                                            {% endif %}
+                                                            </li>
+                                                        <li>
+                                                            {% if page_obj.has_next %}
+                                                             <a href="?page={{ page_obj.next_page_number }}">Siguente</a>
+                                                            {% endif %}
+                                                        </li>
+                                                    </ul>
+									</div><!-- /.col -->
+                                </div>
 					</div><!-- /.page-content -->
 				</div>
 			</div><!-- /.main-content -->

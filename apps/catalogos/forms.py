@@ -14,7 +14,7 @@ class Cat_Tipo_Form(forms.ModelForm):
 			'descripcion': 'Descripcion',
 		}
 		widgets = {
-			'descripcion': forms.Textarea(attrs={'class':'form-control'}),
+			'descripcion': forms.TextInput(attrs={'class':'form-control'}),
 		}
 
 class Cat_Tecnologias_Form(forms.ModelForm):
@@ -31,7 +31,7 @@ class Cat_Tecnologias_Form(forms.ModelForm):
 			'tipo_id': 'Tipo ID',
 		}
 		widgets = {
-			'descripcion': forms.Textarea(attrs={'class':'form-control'}),
+			'descripcion': forms.TextInput(attrs={'class':'form-control'}),
 			'tipo_id': forms.Select(attrs={'class':'form-control'}),
 		}
 
@@ -65,7 +65,7 @@ class Cat_Especialidad_Form(forms.ModelForm):
 			'descripcion': 'Descripcion',
 		}
 		widgets = {
-			'descripcion': forms.Textarea(attrs={'class':'form-control'}),
+			'descripcion': forms.TextInput(attrs={'class':'form-control'}),
 		}
 
 class Cat_Estatus_Form(forms.ModelForm):
@@ -80,7 +80,7 @@ class Cat_Estatus_Form(forms.ModelForm):
 			'descripcion': 'Descripcion',
 		}
 		widgets = {
-			'descripcion': forms.Textarea(attrs={'class':'form-control'}),
+			'descripcion': forms.TextInput(attrs={'class':'form-control'}),
 		}
 
 class Cat_Documentos_Form(forms.ModelForm):

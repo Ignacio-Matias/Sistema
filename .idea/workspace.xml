@@ -27,9 +27,57 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apps/docuamentacion/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="24" column="39" lean-forward="false" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="39" />
+            <state relative-caret-position="210">
+              <caret line="45" column="11" lean-forward="false" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="11" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/docuamentacion/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="635">
+              <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="10" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/docuamentacion/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="81" column="30" lean-forward="false" selection-start-line="81" selection-start-column="4" selection-end-line="81" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#45#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ficha_tecnologia_list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/documentacion/Ficha Tecnologias/ficha_tecnologia_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="556" column="64" lean-forward="false" selection-start-line="556" selection-start-column="64" selection-end-line="556" selection-end-column="64" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/docuamentacion/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="103" lean-forward="false" selection-start-line="18" selection-start-column="103" selection-end-line="18" selection-end-column="103" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -42,16 +90,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/informacion/admin.py" />
-        <option value="$PROJECT_DIR$/informacion/models.py" />
-        <option value="$PROJECT_DIR$/apps/docuamentacion/models.py" />
-        <option value="$PROJECT_DIR$/apps/docuamentacion/admin.py" />
-        <option value="$PROJECT_DIR$/apps/usuario/admin.py" />
-        <option value="$PROJECT_DIR$/apps/usuario/urls.py" />
-        <option value="$PROJECT_DIR$/apps/usuario/forms.py" />
-        <option value="$PROJECT_DIR$/apps/usuario/serializers.py" />
-        <option value="$PROJECT_DIR$/apps/docuamentacion/views.py" />
-        <option value="$PROJECT_DIR$/apps/docuamentacion/urls.py" />
         <option value="$PROJECT_DIR$/apps/usuario/views.py" />
         <option value="$PROJECT_DIR$/templates/catalogos/index.html" />
         <option value="$PROJECT_DIR$/templates/registration/password_reset_complete.html" />
@@ -63,31 +101,46 @@
         <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/usuario/registrar.html" />
-        <option value="$PROJECT_DIR$/apps/catalogos/models.py" />
-        <option value="$PROJECT_DIR$/apps/catalogos/forms.py" />
         <option value="$PROJECT_DIR$/sistemas/settings.py" />
         <option value="$PROJECT_DIR$/apps/catalogos/admin.py" />
-        <option value="$PROJECT_DIR$/sistemas/urls.py" />
-        <option value="$PROJECT_DIR$/apps/catalogos/views.py" />
         <option value="$PROJECT_DIR$/apps/catalogos/urls.py" />
         <option value="$PROJECT_DIR$/templates/catalogos/catalogo_list.html" />
-        <option value="$PROJECT_DIR$/templates/catalogos/catalogo_form.html" />
         <option value="$PROJECT_DIR$/templates/catalogos/catalogo_delete.html" />
         <option value="$PROJECT_DIR$/templates/catalogos/Tecnologias/tecnologias_list.html" />
-        <option value="$PROJECT_DIR$/templates/catalogos/Tecnologias/tecnologias_form.html" />
         <option value="$PROJECT_DIR$/templates/catalogos/Tecnologias/tecnologias_delete.html" />
-        <option value="$PROJECT_DIR$/templates/catalogos/Personas/personas_list.html" />
-        <option value="$PROJECT_DIR$/templates/catalogos/Personas/personas_form.html" />
         <option value="$PROJECT_DIR$/templates/catalogos/Personas/personas_delete.html" />
         <option value="$PROJECT_DIR$/templates/catalogos/Estatus/estatus_list.html" />
-        <option value="$PROJECT_DIR$/templates/catalogos/Estatus/estatus_form.html" />
         <option value="$PROJECT_DIR$/templates/catalogos/Estatus/estatus_delete.html" />
         <option value="$PROJECT_DIR$/templates/catalogos/Especialidades/especialidad_list.html" />
-        <option value="$PROJECT_DIR$/templates/catalogos/Especialidades/especialidad_form.html" />
         <option value="$PROJECT_DIR$/templates/catalogos/Especialidades/especialidad_delete.html" />
         <option value="$PROJECT_DIR$/templates/catalogos/Documentos/documentos_list.html" />
         <option value="$PROJECT_DIR$/templates/catalogos/Documentos/documentos_form.html" />
         <option value="$PROJECT_DIR$/templates/catalogos/Documentos/documentos_delete.html" />
+        <option value="$PROJECT_DIR$/apps/catalogos/views.py" />
+        <option value="$PROJECT_DIR$/sistemas/urls.py" />
+        <option value="$PROJECT_DIR$/templates/documentacion/Credenciales/credenciales_form.html" />
+        <option value="$PROJECT_DIR$/templates/documentacion/Credenciales/credenciales_delete.html" />
+        <option value="$PROJECT_DIR$/templates/documentacion/Credenciales/credenciales_list.html" />
+        <option value="$PROJECT_DIR$/apps/docuamentacion/admin.py" />
+        <option value="$PROJECT_DIR$/templates/documentacion/Fichas/fichas_form.html" />
+        <option value="$PROJECT_DIR$/templates/catalogos/catalogo_form.html" />
+        <option value="$PROJECT_DIR$/templates/catalogos/Tecnologias/tecnologias_form.html" />
+        <option value="$PROJECT_DIR$/templates/catalogos/Personas/personas_form.html" />
+        <option value="$PROJECT_DIR$/templates/catalogos/Personas/personas_list.html" />
+        <option value="$PROJECT_DIR$/templates/catalogos/Especialidades/especialidad_form.html" />
+        <option value="$PROJECT_DIR$/apps/catalogos/forms.py" />
+        <option value="$PROJECT_DIR$/templates/catalogos/Estatus/estatus_form.html" />
+        <option value="$PROJECT_DIR$/templates/documentacion/Fichas/fichas_delete.html" />
+        <option value="$PROJECT_DIR$/templates/documentacion/Fichas/fichas_list.html" />
+        <option value="$PROJECT_DIR$/templates/documentacion/Equipo Ficha/equipo_ficha_list.html" />
+        <option value="$PROJECT_DIR$/templates/documentacion/Equipo Ficha/equipo_ficha_form.html" />
+        <option value="$PROJECT_DIR$/apps/catalogos/models.py" />
+        <option value="$PROJECT_DIR$/templates/documentacion/Equipo Ficha/equipo_ficha_delete.html" />
+        <option value="$PROJECT_DIR$/apps/docuamentacion/forms.py" />
+        <option value="$PROJECT_DIR$/apps/docuamentacion/models.py" />
+        <option value="$PROJECT_DIR$/apps/docuamentacion/views.py" />
+        <option value="$PROJECT_DIR$/apps/docuamentacion/urls.py" />
+        <option value="$PROJECT_DIR$/templates/documentacion/Ficha Tecnologias/ficha_tecnologia_list.html" />
       </list>
     </option>
   </component>
@@ -100,7 +153,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
+    <option name="width" value="1370" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectView">
@@ -119,6 +172,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -142,6 +196,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sistemas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sistemas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="documentacion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sistemas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sistemas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="documentacion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ficha Tecnologias" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -197,7 +291,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -208,11 +301,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\ProyectosDjango\Residencia\sistemas\templates\documentacion" />
+      <recent name="C:\ProyectosDjango\Residencia\sistemas\templates\documentacion\Credenciales" />
       <recent name="C:\ProyectosDjango\Residencia\sistemas\templates\catalogos" />
       <recent name="C:\ProyectosDjango\Residencia\sistemas\templates\catalogos\Tecnologias" />
       <recent name="C:\ProyectosDjango\sistemas\sistemas\sistemas\templates\catalogos\Tecnologias" />
-      <recent name="C:\ProyectosDjango\sistemas\sistemas\sistemas\templates\catalogos" />
-      <recent name="C:\ProyectosDjango\sistemas\sistemas\sistemas\static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -498,20 +591,20 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1370" height="744" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20347957" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2129771" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5030349" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32676518" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32676518" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24713585" sideWeight="0.4969651" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -521,6 +614,27 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5030349" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32676518" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24713585" sideWeight="0.4969651" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2129771" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -543,85 +657,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/statics/css/bootstrap.min.css" />
-    <entry file="file://$PROJECT_DIR$/templates/catalogos/index.html" />
-    <entry file="file://$PROJECT_DIR$/apps/usuario/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="65" lean-forward="false" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/assets/js/ace/ace.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/TemplateOficial/html/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="37" column="4" lean-forward="false" selection-start-line="37" selection-start-column="4" selection-end-line="333" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/registration/password_reset_complete.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/registration/password_reset_confirm.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/registration/password_reset_email.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/registration/password_reset_done.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/registration/password_reset_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sistemas/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/TemplateOficial/html/blank.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1449">
@@ -670,6 +705,147 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/informacion/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/catalogos/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="34" lean-forward="false" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/catalogos/catalogo_delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="448" column="69" lean-forward="false" selection-start-line="448" selection-start-column="69" selection-end-line="448" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/catalogos/Tecnologias/tecnologias_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="448" column="69" lean-forward="false" selection-start-line="448" selection-start-column="69" selection-end-line="448" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/catalogos/Personas/personas_delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="679">
+          <caret line="455" column="24" lean-forward="false" selection-start-line="455" selection-start-column="24" selection-end-line="455" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/catalogos/Estatus/estatus_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="428" column="0" lean-forward="true" selection-start-line="428" selection-start-column="0" selection-end-line="428" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/catalogos/Estatus/estatus_delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="455" column="24" lean-forward="false" selection-start-line="455" selection-start-column="24" selection-end-line="455" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/catalogos/Especialidades/especialidad_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1036">
+          <caret line="455" column="24" lean-forward="false" selection-start-line="401" selection-start-column="44" selection-end-line="455" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/catalogos/Especialidades/especialidad_delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="455" column="24" lean-forward="false" selection-start-line="455" selection-start-column="24" selection-end-line="455" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/catalogos/Documentos/documentos_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1036">
+          <caret line="455" column="24" lean-forward="false" selection-start-line="401" selection-start-column="44" selection-end-line="455" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/catalogos/Documentos/documentos_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="455" column="24" lean-forward="false" selection-start-line="455" selection-start-column="24" selection-end-line="455" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/catalogos/Documentos/documentos_delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="455" column="24" lean-forward="false" selection-start-line="455" selection-start-column="24" selection-end-line="455" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sistemas/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="24" column="88" lean-forward="false" selection-start-line="24" selection-start-column="75" selection-end-line="24" selection-end-column="88" />
+          <folding>
+            <element signature="e#641#673#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/catalogos/Tecnologias/tecnologias_delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3594">
+          <caret line="452" column="0" lean-forward="true" selection-start-line="452" selection-start-column="0" selection-end-line="452" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sistemas/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="87" column="21" lean-forward="false" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/documentacion/Credenciales/credenciales_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11594">
+          <caret line="682" column="60" lean-forward="false" selection-start-line="682" selection-start-column="59" selection-end-line="682" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/documentacion/Credenciales/credenciales_delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11594">
+          <caret line="682" column="98" lean-forward="false" selection-start-line="682" selection-start-column="98" selection-end-line="682" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/catalogos/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="88" lean-forward="false" selection-start-line="10" selection-start-column="71" selection-end-line="10" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/documentacion/Credenciales/credenciales_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="708" column="106" lean-forward="false" selection-start-line="708" selection-start-column="106" selection-end-line="708" selection-end-column="106" />
           <folding />
         </state>
       </provider>
@@ -682,243 +858,197 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/informacion/views.py">
+    <entry file="file://$PROJECT_DIR$/apps/docuamentacion/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sistemas/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="133" column="62" lean-forward="false" selection-start-line="133" selection-start-column="62" selection-end-line="133" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/catalogos/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="97" column="83" lean-forward="false" selection-start-line="97" selection-start-column="83" selection-end-line="97" selection-end-column="83" />
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
-            <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/catalogos/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="34" lean-forward="false" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sistemas/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/catalogos/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="27" column="22" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/catalogos/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="158" column="21" lean-forward="false" selection-start-line="158" selection-start-column="4" selection-end-line="158" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1122">
+          <caret line="71" column="23" lean-forward="true" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/catalogos/catalogo_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="448" column="69" lean-forward="false" selection-start-line="448" selection-start-column="69" selection-end-line="448" selection-end-column="69" />
+        <state relative-caret-position="392">
+          <caret line="724" column="57" lean-forward="true" selection-start-line="713" selection-start-column="52" selection-end-line="724" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/catalogos/catalogo_form.html">
+    <entry file="file://$PROJECT_DIR$/templates/documentacion/Fichas/fichas_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="448" column="69" lean-forward="false" selection-start-line="448" selection-start-column="69" selection-end-line="448" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/catalogos/catalogo_delete.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="448" column="69" lean-forward="false" selection-start-line="448" selection-start-column="69" selection-end-line="448" selection-end-column="69" />
+        <state relative-caret-position="220">
+          <caret line="723" column="134" lean-forward="true" selection-start-line="723" selection-start-column="39" selection-end-line="723" selection-end-column="134" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/catalogos/Tecnologias/tecnologias_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="448" column="69" lean-forward="false" selection-start-line="448" selection-start-column="69" selection-end-line="448" selection-end-column="69" />
+        <state relative-caret-position="366">
+          <caret line="683" column="115" lean-forward="false" selection-start-line="683" selection-start-column="115" selection-end-line="683" selection-end-column="115" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/catalogos/Tecnologias/tecnologias_list.html">
+    <entry file="file://$PROJECT_DIR$/templates/catalogos/Personas/personas_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="448" column="69" lean-forward="false" selection-start-line="448" selection-start-column="69" selection-end-line="448" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/catalogos/Tecnologias/tecnologias_delete.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="445" column="33" lean-forward="true" selection-start-line="445" selection-start-column="33" selection-end-line="445" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/catalogos/Personas/personas_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="455" column="24" lean-forward="false" selection-start-line="455" selection-start-column="24" selection-end-line="455" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/catalogos/Personas/personas_delete.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="679">
-          <caret line="455" column="24" lean-forward="false" selection-start-line="455" selection-start-column="24" selection-end-line="455" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/catalogos/Estatus/estatus_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="428" column="0" lean-forward="true" selection-start-line="428" selection-start-column="0" selection-end-line="428" selection-end-column="0" />
+        <state relative-caret-position="161">
+          <caret line="687" column="84" lean-forward="false" selection-start-line="687" selection-start-column="84" selection-end-line="687" selection-end-column="84" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/catalogos/Estatus/estatus_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="455" column="24" lean-forward="false" selection-start-line="455" selection-start-column="24" selection-end-line="455" selection-end-column="24" />
+        <state relative-caret-position="322">
+          <caret line="680" column="122" lean-forward="false" selection-start-line="680" selection-start-column="122" selection-end-line="680" selection-end-column="122" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/catalogos/Estatus/estatus_delete.html">
+    <entry file="file://$PROJECT_DIR$/apps/catalogos/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="455" column="24" lean-forward="false" selection-start-line="455" selection-start-column="24" selection-end-line="455" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/catalogos/Especialidades/especialidad_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1036">
-          <caret line="455" column="24" lean-forward="false" selection-start-line="401" selection-start-column="44" selection-end-line="455" selection-end-column="24" />
+        <state relative-caret-position="159">
+          <caret line="82" column="42" lean-forward="false" selection-start-line="82" selection-start-column="42" selection-end-line="82" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/catalogos/Especialidades/especialidad_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="455" column="24" lean-forward="false" selection-start-line="455" selection-start-column="24" selection-end-line="455" selection-end-column="24" />
+        <state relative-caret-position="220">
+          <caret line="680" column="122" lean-forward="false" selection-start-line="680" selection-start-column="122" selection-end-line="680" selection-end-column="122" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/catalogos/Especialidades/especialidad_delete.html">
+    <entry file="file://$PROJECT_DIR$/templates/catalogos/Personas/personas_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="455" column="24" lean-forward="false" selection-start-line="455" selection-start-column="24" selection-end-line="455" selection-end-column="24" />
+        <state relative-caret-position="170">
+          <caret line="683" column="127" lean-forward="false" selection-start-line="683" selection-start-column="127" selection-end-line="683" selection-end-column="127" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/catalogos/Documentos/documentos_list.html">
+    <entry file="file://$PROJECT_DIR$/templates/catalogos/catalogo_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1036">
-          <caret line="455" column="24" lean-forward="false" selection-start-line="401" selection-start-column="44" selection-end-line="455" selection-end-column="24" />
+        <state relative-caret-position="354">
+          <caret line="680" column="122" lean-forward="false" selection-start-line="680" selection-start-column="122" selection-end-line="680" selection-end-column="122" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/catalogos/Documentos/documentos_form.html">
+    <entry file="file://$PROJECT_DIR$/templates/documentacion/Fichas/fichas_delete.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="455" column="24" lean-forward="false" selection-start-line="455" selection-start-column="24" selection-end-line="455" selection-end-column="24" />
+        <state relative-caret-position="165">
+          <caret line="682" column="104" lean-forward="false" selection-start-line="682" selection-start-column="104" selection-end-line="682" selection-end-column="104" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/catalogos/Documentos/documentos_delete.html">
+    <entry file="file://$PROJECT_DIR$/templates/documentacion/Fichas/fichas_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="455" column="24" lean-forward="false" selection-start-line="455" selection-start-column="24" selection-end-line="455" selection-end-column="24" />
+        <state relative-caret-position="365">
+          <caret line="716" column="148" lean-forward="false" selection-start-line="716" selection-start-column="148" selection-end-line="716" selection-end-column="148" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/catalogos/urls.py">
+    <entry file="file://$PROJECT_DIR$/templates/documentacion/Equipo Ficha/equipo_ficha_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="18" column="95" lean-forward="false" selection-start-line="18" selection-start-column="76" selection-end-line="18" selection-end-column="95" />
+        <state relative-caret-position="357">
+          <caret line="697" column="42" lean-forward="false" selection-start-line="697" selection-start-column="42" selection-end-line="697" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/documentacion/Equipo Ficha/equipo_ficha_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="697" column="85" lean-forward="false" selection-start-line="697" selection-start-column="77" selection-end-line="697" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/documentacion/Equipo Ficha/equipo_ficha_delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="682" column="106" lean-forward="false" selection-start-line="682" selection-start-column="106" selection-end-line="682" selection-end-column="106" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/catalogos/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="20" column="10" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/docuamentacion/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="635">
+          <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="10" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/catalogos/Personas/personas_list.html">
+    <entry file="file://$PROJECT_DIR$/templates/documentacion/Ficha Tecnologias/equipo_ficha_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1016">
-          <caret line="455" column="24" lean-forward="false" selection-start-line="401" selection-start-column="44" selection-end-line="455" selection-end-column="24" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/docuamentacion/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="81" column="30" lean-forward="false" selection-start-line="81" selection-start-column="4" selection-end-line="81" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/docuamentacion/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/docuamentacion/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="306">
+          <caret line="18" column="103" lean-forward="false" selection-start-line="18" selection-start-column="103" selection-end-line="18" selection-end-column="103" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/documentacion/Ficha Tecnologias/ficha_tecnologia_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="556" column="64" lean-forward="false" selection-start-line="556" selection-start-column="64" selection-end-line="556" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/apps/docuamentacion/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" column="39" lean-forward="false" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="39" />
-          <folding />
+        <state relative-caret-position="210">
+          <caret line="45" column="11" lean-forward="false" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

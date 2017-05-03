@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 
-{% block title %}Tipo de Catalogo{% endblock %}
+{% block title %}Documentación | credenciales{% endblock %}
 {% block content %}
 	<body class="no-skin">
 		<!-- #section:basics/navbar.layout -->
@@ -389,7 +389,7 @@
 				</div><!-- /.sidebar-shortcuts -->
 
 				<ul class="nav nav-list">
-					<li class="active open">
+					<li class="">
                         <a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-laptop"></i>
 							<span class="menu-text"> Catalogos </span>
@@ -400,7 +400,7 @@
 						<b class="arrow"></b>
 
 						<ul class="submenu">
-							<li class="active">
+							<li class="">
 								<a href="{% url 'catalogos:catalogo_listar' %}">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Tipo
@@ -456,7 +456,8 @@
 						</ul>
 					</li>
 
-					<li class="">
+
+					<li class="activate open">
                         <a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-folder-o"></i>
 							<span class="menu-text"> Documentacion </span>
@@ -467,7 +468,7 @@
 						<b class="arrow"></b>
 
 						<ul class="submenu">
-							<li class="">
+							<li class="active">
 								<a href="#">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Credenciales
@@ -551,9 +552,9 @@
 							</li>
 
 							<li>
-								<a href="#">Catalogos</a>
+								<a href="#">Documentacion</a>
 							</li>
-							<li class="active">Tipo</li>
+							<li class="active">Credenciales</li>
 						</ul><!-- /.breadcrumb -->
 
 						<!-- #section:basics/content.searchbox -->
@@ -663,37 +664,61 @@
                         <!-- /section:settings.box -->
 						<div class="page-header">
 							<h1>
-								Catalogos
-								<small>
-									<i class="ace-icon fa fa-angle-double-right"></i>
-									Tipo de Catalogo
-								</small>
+								Credenciales <small>Lista de Credenciales</small>
 							</h1>
 						</div><!-- /.page-header -->
 
 
 						<!-- /section:settings.box -->
-						<div class="row">
+                        <div class="row">
+
 							<div class="col-xs-12">
 								<!-- PAGE CONTENT BEGINS -->
-                                <form method="post">
-                                    {% csrf_token %}
-                                     <label class="col-sm-4 control-label no-padding-right" for="form-field-1">Descripcion </label>
-                                   {{form.descripcion}}
-                                    <div class="clearfix form-actions">
-										<div class="col-md-offset-4 col-md-9">
-											<button class="btn btn-xs btn-info" type="submit">
-												<i class="ace-icon fa fa-check bigger-110"></i>
-												Guardar
-											</button>
-                                            <a href="javascript:history.back(-1);"><input type="button" class="btn btn-xs" value="volver"></a>
-										</div>
-									</div>
+								<div class="row">
+									<div class="col-sm-12">
+                                       <a href="{% url 'documentacion:credencial_nuevo' %}">
+                                       <button class="btn btn-xs btn-primary pull-right">
+                                            <i class="ace-icon fa fa-plus align-top bigger-125"></i>
+                                            Agregar
+                                        </button></a><br><br>
+													<table class="table table-bordered">
+                                                        <thead>
+                                                            <tr>
+                                                                <td>Tecnologias</td>
+                                                                <td>Usuario</td>
+                                                                <td>Host</td>
+                                                                <td>Nombre</td>
+                                                                <td>Puerto</td>
+                                                                <td>Acciones</td>
+                                                            </tr>
 
-                                </form>
-								<!-- PAGE CONTENT ENDS -->
-							</div><!-- /.col -->
-						</div><!-- /.row -->
+                                                        </thead>
+                                                        <tbody>
+                                                            {% if credenciales %}
+                                                            {% for credencial in credenciales %}
+                                                            <tr>
+                                                                <td><a href="{% url 'catalogos:tecnologia_listar' %}"> {{ credencial.cat_tipo_id }}</a></td>
+                                                                <td><a href="{% url 'documentacion:credencial_editar' credencial.id %}"> {{ credencial.usuario }} </a></td>
+                                                                <td>{{ credencial.host }}</td>
+                                                                <td>{{ credencial.nombre }}</td>
+                                                                <td>{{ credencial.puerto }}</td>
+                                                                <td>
+                                                                    <div class="hidden-sm hidden-xs btn-xs btn-group">
+
+                                                                        <a class= "btn btn-xs btn-info" href="{% url 'documentacion:credencial_editar' credencial.id %}"><i class="ace-icon fa fa-pencil bigger-120"></i></a>
+                                                                        <a class= "btn btn-xs btn-danger" href="{% url 'documentacion:credencial_eliminar' credencial.id %}"><i class="ace-icon fa fa-trash-o bigger-120"></i></a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            {% endfor %}
+
+                                                            {% else %}
+                                                            <h1>No hay registros</h1>
+                                                            {% endif %}
+                                                        </tbody>
+                                                    </table>
+									</div><!-- /.col -->
+                                </div>
 					</div><!-- /.page-content -->
 				</div>
 			</div><!-- /.main-content -->

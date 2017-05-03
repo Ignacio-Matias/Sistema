@@ -389,7 +389,7 @@
 				</div><!-- /.sidebar-shortcuts -->
 
 				<ul class="nav nav-list">
-					<li class="active open">
+					<li class="">
                         <a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-laptop"></i>
 							<span class="menu-text"> Catalogos </span>
@@ -400,7 +400,7 @@
 						<b class="arrow"></b>
 
 						<ul class="submenu">
-							<li class="active">
+							<li class="">
 								<a href="{% url 'catalogos:catalogo_listar' %}">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Tipo
@@ -456,7 +456,7 @@
 						</ul>
 					</li>
 
-					<li class="">
+					<li class="active open">
                         <a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-folder-o"></i>
 							<span class="menu-text"> Documentacion </span>
@@ -476,7 +476,7 @@
 								<b class="arrow"></b>
 							</li>
 
-                            <li class="">
+                            <li class="active">
 								<a href="#">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Fichas
@@ -551,9 +551,9 @@
 							</li>
 
 							<li>
-								<a href="#">Catalogos</a>
+								<a href="#">Documentacion</a>
 							</li>
-							<li class="active">Tipo</li>
+							<li class="active">Fichas</li>
 						</ul><!-- /.breadcrumb -->
 
 						<!-- #section:basics/content.searchbox -->
@@ -663,10 +663,10 @@
                         <!-- /section:settings.box -->
 						<div class="page-header">
 							<h1>
-								Catalogos
+								Fichas
 								<small>
 									<i class="ace-icon fa fa-angle-double-right"></i>
-									Tipo de Catalogo
+									Eliminar Ficha
 								</small>
 							</h1>
 						</div><!-- /.page-header -->
@@ -678,18 +678,9 @@
 								<!-- PAGE CONTENT BEGINS -->
                                 <form method="post">
                                     {% csrf_token %}
-                                     <label class="col-sm-4 control-label no-padding-right" for="form-field-1">Descripcion </label>
-                                   {{form.descripcion}}
-                                    <div class="clearfix form-actions">
-										<div class="col-md-offset-4 col-md-9">
-											<button class="btn btn-xs btn-info" type="submit">
-												<i class="ace-icon fa fa-check bigger-110"></i>
-												Guardar
-											</button>
-                                            <a href="javascript:history.back(-1);"><input type="button" class="btn btn-xs" value="volver"></a>
-										</div>
-									</div>
-
+                                    <h3>¿Desea eliminar a <b>{{ object.nombre }}</b>?</h3>
+                                    <button class="btn btn-xs btn-danger" type="submit">Sí, eliminar</button>
+                                    <a class= "btn btn-xs btn-default" href="{% url 'documentacion:ficha_listar' %}">Cancelar</a>
                                 </form>
 								<!-- PAGE CONTENT ENDS -->
 							</div><!-- /.col -->

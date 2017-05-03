@@ -678,8 +678,10 @@
 								<!-- PAGE CONTENT BEGINS -->
                                 <form method="post">
                                     {% csrf_token %}
+                                     <label class="col-sm-4 control-label no-padding-right" for="form-field-1">ID </label>
                                    {{form.puc_id}}
                                     <br>
+                                     <label class="col-sm-4 control-label no-padding-right" for="form-field-1">Tipo de Contacto </label>
                                     {{form.tipo}}
                                     <div class="clearfix form-actions">
 										<div class="col-md-offset-4 col-md-9">

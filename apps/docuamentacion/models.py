@@ -6,6 +6,8 @@ from django.db import models
 from django.db import migrations,models
 from apps.catalogos.models import *
 
+tipouso = (('INTERNO','INTERNO'),('EXTERNO','EXTERNO'),)
+
 # para  ficha
 class credenciales(models.Model):
     cat_tipo_id = models.ForeignKey(cat_tecnologias)
@@ -15,16 +17,23 @@ class credenciales(models.Model):
     nombre = models.CharField(max_length=50)
     puerto = models.CharField(max_length=5)
 
-class ficha (models.Model):
+    def __str__(self):
+        return '{}'.format(self.usuario)
+
+class ficha(models.Model):
     nombre = models.CharField(max_length=50)
     descripcion = models.CharField(max_length=50)
     cat_estatus_id = models.ForeignKey(cat_estatus)
     url = models.CharField(max_length=50)
     git = models.CharField(max_length=50)
     contacto_id = models.ForeignKey(cat_personas)
-    tipouso = models.CharField("Tipo de uso",max_length=20, choices=tipouso)
-    dependencia_id = models.IntegerField
-    credencial_id = models.ManyToManyField(credenciales)
+    tipouso = models.CharField("Tipo de uso", max_length=20, choices=tipouso)
+    dependencia_id = models.IntegerField()
+    credencial_id = models.ManyToManyField(credenciales, blank=True)
+
+    def __str__(self):
+        return '{}'.format(self.nombre)
+
 
 class equipo_ficha (models.Model):
     ficha_id = models.ForeignKey(ficha)
@@ -34,7 +43,7 @@ class equipo_ficha (models.Model):
 class ficha_cat_tecnologias(models.Model):
     ficha_id = models.ForeignKey(ficha)
     cat_tecnologias_id = models.ForeignKey(cat_tecnologias)
-    version = models.CharField(max_length = 10)
+    version = models.CharField(max_length=10)
 
 
 class documento_archivo(models.Model):
@@ -42,9 +51,9 @@ class documento_archivo(models.Model):
     cat_documento_id = models.ForeignKey(cat_documentos)
     # archivo
 
-class logtable (models.Model):
-    usuario_id = models.IntegerField
-    fecha = models.DateField
+class logtable(models.Model):
+    usuario_id = models.IntegerField(blank=True, null=True)
+    fecha = models.DateField()
     nametabla = models.CharField(max_length=50)
-    registro_id = models.IntegerField
+    registro_id = models.IntegerField(blank=True, null=True)
     tipomovimiento = models.CharField(max_length=50)

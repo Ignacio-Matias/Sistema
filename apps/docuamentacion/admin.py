@@ -2,6 +2,7 @@ from django.contrib import admin
 
 # Register your models here.
 from apps.docuamentacion.models import *
+
 admin.site.register(credenciales)
 admin.site.register(ficha)
 admin.site.register(equipo_ficha)

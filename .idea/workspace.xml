@@ -27,8 +27,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/docuamentacion/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="50" column="20" lean-forward="false" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="20" />
+            <state relative-caret-position="414">
+              <caret line="57" column="15" lean-forward="false" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="15" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -39,8 +39,8 @@
       <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/docuamentacion/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="10" />
+            <state relative-caret-position="193">
+              <caret line="106" column="19" lean-forward="false" selection-start-line="106" selection-start-column="6" selection-end-line="106" selection-end-column="19" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -51,8 +51,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/docuamentacion/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="87" column="26" lean-forward="false" selection-start-line="87" selection-start-column="4" selection-end-line="87" selection-end-column="26" />
+            <state relative-caret-position="353">
+              <caret line="132" column="19" lean-forward="false" selection-start-line="132" selection-start-column="6" selection-end-line="132" selection-end-column="19" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -60,21 +60,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="documento_list.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/documentacion/Documentos/documento_list.html">
+      <file leaf-file-name="logtable_form.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/documentacion/Logtable/logtable_form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="698" column="0" lean-forward="false" selection-start-line="698" selection-start-column="0" selection-end-line="698" selection-end-column="0" />
+            <state relative-caret-position="220">
+              <caret line="691" column="46" lean-forward="true" selection-start-line="691" selection-start-column="46" selection-end-line="691" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ficha_tecnologia_list.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/documentacion/Ficha Tecnologias/ficha_tecnologia_list.html">
+      <file leaf-file-name="logtable_list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/documentacion/Logtable/logtable_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="556" column="64" lean-forward="false" selection-start-line="556" selection-start-column="64" selection-end-line="556" selection-end-column="64" />
+            <state relative-caret-position="454">
+              <caret line="678" column="84" lean-forward="false" selection-start-line="678" selection-start-column="84" selection-end-line="678" selection-end-column="84" />
               <folding />
             </state>
           </provider>
@@ -83,8 +83,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/docuamentacion/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="85" lean-forward="false" selection-start-line="19" selection-start-column="85" selection-end-line="19" selection-end-column="85" />
+            <state relative-caret-position="414">
+              <caret line="33" column="89" lean-forward="false" selection-start-line="33" selection-start-column="75" selection-end-line="33" selection-end-column="89" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -100,57 +100,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/catalogos/index.html" />
-        <option value="$PROJECT_DIR$/templates/registration/password_reset_complete.html" />
-        <option value="$PROJECT_DIR$/templates/registration/password_reset_confirm.html" />
-        <option value="$PROJECT_DIR$/templates/registration/password_reset_done.html" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/templates/TemplateOficial/html/login.html" />
-        <option value="$PROJECT_DIR$/templates/registration/password_reset_form.html" />
-        <option value="$PROJECT_DIR$/templates/login.html" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/templates/usuario/registrar.html" />
         <option value="$PROJECT_DIR$/sistemas/settings.py" />
         <option value="$PROJECT_DIR$/apps/catalogos/admin.py" />
         <option value="$PROJECT_DIR$/apps/catalogos/urls.py" />
-        <option value="$PROJECT_DIR$/templates/catalogos/catalogo_list.html" />
         <option value="$PROJECT_DIR$/templates/catalogos/catalogo_delete.html" />
-        <option value="$PROJECT_DIR$/templates/catalogos/Tecnologias/tecnologias_list.html" />
         <option value="$PROJECT_DIR$/templates/catalogos/Tecnologias/tecnologias_delete.html" />
         <option value="$PROJECT_DIR$/templates/catalogos/Personas/personas_delete.html" />
-        <option value="$PROJECT_DIR$/templates/catalogos/Estatus/estatus_list.html" />
         <option value="$PROJECT_DIR$/templates/catalogos/Estatus/estatus_delete.html" />
-        <option value="$PROJECT_DIR$/templates/catalogos/Especialidades/especialidad_list.html" />
         <option value="$PROJECT_DIR$/templates/catalogos/Especialidades/especialidad_delete.html" />
-        <option value="$PROJECT_DIR$/templates/catalogos/Documentos/documentos_list.html" />
         <option value="$PROJECT_DIR$/templates/catalogos/Documentos/documentos_form.html" />
         <option value="$PROJECT_DIR$/templates/catalogos/Documentos/documentos_delete.html" />
         <option value="$PROJECT_DIR$/apps/catalogos/views.py" />
         <option value="$PROJECT_DIR$/sistemas/urls.py" />
         <option value="$PROJECT_DIR$/templates/documentacion/Credenciales/credenciales_form.html" />
         <option value="$PROJECT_DIR$/templates/documentacion/Credenciales/credenciales_delete.html" />
-        <option value="$PROJECT_DIR$/templates/documentacion/Credenciales/credenciales_list.html" />
         <option value="$PROJECT_DIR$/apps/docuamentacion/admin.py" />
         <option value="$PROJECT_DIR$/templates/documentacion/Fichas/fichas_form.html" />
         <option value="$PROJECT_DIR$/templates/catalogos/catalogo_form.html" />
         <option value="$PROJECT_DIR$/templates/catalogos/Tecnologias/tecnologias_form.html" />
         <option value="$PROJECT_DIR$/templates/catalogos/Personas/personas_form.html" />
-        <option value="$PROJECT_DIR$/templates/catalogos/Personas/personas_list.html" />
         <option value="$PROJECT_DIR$/templates/catalogos/Especialidades/especialidad_form.html" />
         <option value="$PROJECT_DIR$/apps/catalogos/forms.py" />
         <option value="$PROJECT_DIR$/templates/catalogos/Estatus/estatus_form.html" />
         <option value="$PROJECT_DIR$/templates/documentacion/Fichas/fichas_delete.html" />
-        <option value="$PROJECT_DIR$/templates/documentacion/Fichas/fichas_list.html" />
-        <option value="$PROJECT_DIR$/templates/documentacion/Equipo Ficha/equipo_ficha_list.html" />
         <option value="$PROJECT_DIR$/templates/documentacion/Equipo Ficha/equipo_ficha_form.html" />
-        <option value="$PROJECT_DIR$/apps/catalogos/models.py" />
         <option value="$PROJECT_DIR$/templates/documentacion/Equipo Ficha/equipo_ficha_delete.html" />
         <option value="$PROJECT_DIR$/apps/docuamentacion/forms.py" />
         <option value="$PROJECT_DIR$/apps/docuamentacion/models.py" />
+        <option value="$PROJECT_DIR$/templates/documentacion/Ficha Tecnologias/ficha_tecnologia_form.html" />
+        <option value="$PROJECT_DIR$/templates/documentacion/Ficha Tecnologias/ficha_tecnologia_delete.html" />
+        <option value="$PROJECT_DIR$/templates/documentacion/Documentos/documento_form.html" />
+        <option value="$PROJECT_DIR$/apps/catalogos/models.py" />
+        <option value="$PROJECT_DIR$/templates/documentacion/Documentos/documento_delete.html" />
+        <option value="$PROJECT_DIR$/templates/documentacion/Logtable/credenciales_form.html" />
+        <option value="$PROJECT_DIR$/templates/documentacion/Logtable/credenciales_list.html" />
+        <option value="$PROJECT_DIR$/templates/documentacion/Fichas/fichas_list.html" />
         <option value="$PROJECT_DIR$/templates/documentacion/Ficha Tecnologias/ficha_tecnologia_list.html" />
+        <option value="$PROJECT_DIR$/templates/documentacion/Ficha_Tecnologias/ficha_tecnologia_list.html" />
+        <option value="$PROJECT_DIR$/templates/documentacion/Equipo Ficha/equipo_ficha_list.html" />
+        <option value="$PROJECT_DIR$/templates/documentacion/Documentos/documento_list.html" />
+        <option value="$PROJECT_DIR$/templates/documentacion/Credenciales/credenciales_list.html" />
+        <option value="$PROJECT_DIR$/templates/catalogos/Documentos/documentos_list.html" />
+        <option value="$PROJECT_DIR$/templates/login.html" />
+        <option value="$PROJECT_DIR$/templates/catalogos/catalogo_list.html" />
+        <option value="$PROJECT_DIR$/templates/catalogos/Tecnologias/tecnologias_list.html" />
+        <option value="$PROJECT_DIR$/templates/catalogos/Personas/personas_list.html" />
+        <option value="$PROJECT_DIR$/templates/catalogos/Especialidades/especialidad_list.html" />
+        <option value="$PROJECT_DIR$/templates/catalogos/Estatus/estatus_list.html" />
         <option value="$PROJECT_DIR$/apps/docuamentacion/views.py" />
         <option value="$PROJECT_DIR$/apps/docuamentacion/urls.py" />
-        <option value="$PROJECT_DIR$/templates/documentacion/Documentos/documento_list.html" />
+        <option value="$PROJECT_DIR$/templates/documentacion/Logtable/logtable_list.html" />
+        <option value="$PROJECT_DIR$/templates/documentacion/Logtable/logtable_form.html" />
       </list>
     </option>
   </component>
@@ -226,26 +226,8 @@
               <option name="myItemId" value="documentacion" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sistemas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sistemas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="documentacion" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Ficha Tecnologias" />
+              <option name="myItemId" value="Logtable" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -264,10 +246,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="documentacion" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Documentos" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -626,26 +604,47 @@
     <frame x="-8" y="-8" width="1370" height="744" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2129771" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5030349" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32676518" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32676518" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24713585" sideWeight="0.4969651" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21374045" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5030349" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32676518" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24713585" sideWeight="0.4969651" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21374045" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -668,49 +667,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/apps/usuario/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/usuario/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/usuario/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/catalogos/catalogo_list2.html" />
-    <entry file="file://$PROJECT_DIR$/templates/usuario/registrar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/informacion/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/catalogos/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -725,24 +681,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/catalogos/Tecnologias/tecnologias_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="448" column="69" lean-forward="false" selection-start-line="448" selection-start-column="69" selection-end-line="448" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/catalogos/Personas/personas_delete.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="679">
           <caret line="455" column="24" lean-forward="false" selection-start-line="455" selection-start-column="24" selection-end-line="455" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/catalogos/Estatus/estatus_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="428" column="0" lean-forward="true" selection-start-line="428" selection-start-column="0" selection-end-line="428" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -753,24 +695,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/catalogos/Especialidades/especialidad_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1036">
-          <caret line="455" column="24" lean-forward="false" selection-start-line="401" selection-start-column="44" selection-end-line="455" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/catalogos/Especialidades/especialidad_delete.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="526">
           <caret line="455" column="24" lean-forward="false" selection-start-line="455" selection-start-column="24" selection-end-line="455" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/catalogos/Documentos/documentos_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1036">
-          <caret line="455" column="24" lean-forward="false" selection-start-line="401" selection-start-column="44" selection-end-line="455" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -838,19 +766,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/documentacion/Credenciales/credenciales_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="708" column="106" lean-forward="false" selection-start-line="708" selection-start-column="106" selection-end-line="708" selection-end-column="106" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/informacion/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -858,25 +777,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#32#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/catalogos/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="71" column="23" lean-forward="true" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/catalogos/catalogo_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="724" column="57" lean-forward="true" selection-start-line="713" selection-start-column="52" selection-end-line="724" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -884,7 +784,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="723" column="134" lean-forward="true" selection-start-line="723" selection-start-column="39" selection-end-line="723" selection-end-column="134" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -892,14 +791,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="366">
           <caret line="683" column="115" lean-forward="false" selection-start-line="683" selection-start-column="115" selection-end-line="683" selection-end-column="115" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/catalogos/Personas/personas_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="687" column="84" lean-forward="false" selection-start-line="687" selection-start-column="84" selection-end-line="687" selection-end-column="84" />
           <folding />
         </state>
       </provider>
@@ -916,7 +807,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
           <caret line="82" column="42" lean-forward="false" selection-start-line="82" selection-start-column="42" selection-end-line="82" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -924,7 +814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="680" column="122" lean-forward="false" selection-start-line="680" selection-start-column="122" selection-end-line="680" selection-end-column="122" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -952,14 +841,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/documentacion/Fichas/fichas_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="716" column="148" lean-forward="false" selection-start-line="716" selection-start-column="148" selection-end-line="716" selection-end-column="148" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/documentacion/Equipo Ficha/equipo_ficha_form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -968,98 +849,227 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/documentacion/Equipo Ficha/equipo_ficha_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="697" column="85" lean-forward="false" selection-start-line="697" selection-start-column="77" selection-end-line="697" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/documentacion/Equipo Ficha/equipo_ficha_delete.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="682" column="106" lean-forward="false" selection-start-line="682" selection-start-column="106" selection-end-line="682" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/documentacion/Ficha_Tecnologias/ficha_tecnologia_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="555" column="64" lean-forward="false" selection-start-line="555" selection-start-column="64" selection-end-line="555" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/documentacion/Ficha_Tecnologias/ficha_tecnologia_delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="682" column="122" lean-forward="false" selection-start-line="682" selection-start-column="122" selection-end-line="682" selection-end-column="122" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/catalogos/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1286">
+          <caret line="71" column="23" lean-forward="true" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/catalogos/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="20" column="10" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="10" />
+        <state relative-caret-position="448">
+          <caret line="42" column="50" lean-forward="false" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/documentacion/Ficha Tecnologias/ficha_tecnologia_form.html">
+    <entry file="file://$PROJECT_DIR$/templates/documentacion/Documentos/documento_delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="682" column="115" lean-forward="false" selection-start-line="682" selection-start-column="115" selection-end-line="682" selection-end-column="115" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/documentacion/Fichas/fichas_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="479" column="45" lean-forward="false" selection-start-line="479" selection-start-column="45" selection-end-line="479" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/documentacion/Ficha_Tecnologias/ficha_tecnologia_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="497" column="45" lean-forward="false" selection-start-line="497" selection-start-column="45" selection-end-line="497" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/documentacion/Equipo Ficha/equipo_ficha_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="488" column="45" lean-forward="false" selection-start-line="488" selection-start-column="45" selection-end-line="488" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/documentacion/Documentos/documento_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="678" column="75" lean-forward="false" selection-start-line="678" selection-start-column="75" selection-end-line="678" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/documentacion/Documentos/documento_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="506" column="45" lean-forward="false" selection-start-line="506" selection-start-column="45" selection-end-line="506" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/documentacion/Credenciales/credenciales_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="470" column="45" lean-forward="false" selection-start-line="470" selection-start-column="39" selection-end-line="470" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/catalogos/Documentos/documentos_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="587" column="94" lean-forward="false" selection-start-line="587" selection-start-column="94" selection-end-line="587" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/usuario/registrar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/catalogos/Tecnologias/tecnologias_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="563" column="74" lean-forward="false" selection-start-line="563" selection-start-column="74" selection-end-line="563" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/catalogos/Personas/personas_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="33" lean-forward="false" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/catalogos/catalogo_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="730" column="0" lean-forward="true" selection-start-line="730" selection-start-column="0" selection-end-line="730" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/catalogos/Especialidades/especialidad_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="730" column="16" lean-forward="false" selection-start-line="730" selection-start-column="16" selection-end-line="730" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/catalogos/Estatus/estatus_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="730" column="16" lean-forward="false" selection-start-line="730" selection-start-column="16" selection-end-line="730" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/usuario/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#43#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/docuamentacion/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="10" />
+        <state relative-caret-position="193">
+          <caret line="106" column="19" lean-forward="false" selection-start-line="106" selection-start-column="6" selection-end-line="106" selection-end-column="19" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/documentacion/Documentos/documento_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/docuamentacion/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="85" lean-forward="false" selection-start-line="19" selection-start-column="85" selection-end-line="19" selection-end-column="85" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/documentacion/Documentos/documento_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="698" column="0" lean-forward="false" selection-start-line="698" selection-start-column="0" selection-end-line="698" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/docuamentacion/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="87" column="26" lean-forward="false" selection-start-line="87" selection-start-column="4" selection-end-line="87" selection-end-column="26" />
+        <state relative-caret-position="353">
+          <caret line="132" column="19" lean-forward="false" selection-start-line="132" selection-start-column="6" selection-end-line="132" selection-end-column="19" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/apps/docuamentacion/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="33" column="89" lean-forward="false" selection-start-line="33" selection-start-column="75" selection-end-line="33" selection-end-column="89" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/documentacion/Logtable/logtable_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="678" column="84" lean-forward="false" selection-start-line="678" selection-start-column="84" selection-end-line="678" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/apps/docuamentacion/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="50" column="20" lean-forward="false" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="20" />
+        <state relative-caret-position="414">
+          <caret line="57" column="15" lean-forward="false" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="15" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/documentacion/Ficha Tecnologias/ficha_tecnologia_list.html">
+    <entry file="file://$PROJECT_DIR$/templates/documentacion/Logtable/logtable_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="556" column="64" lean-forward="false" selection-start-line="556" selection-start-column="64" selection-end-line="556" selection-end-column="64" />
+        <state relative-caret-position="220">
+          <caret line="691" column="46" lean-forward="true" selection-start-line="691" selection-start-column="46" selection-end-line="691" selection-end-column="46" />
           <folding />
         </state>
       </provider>

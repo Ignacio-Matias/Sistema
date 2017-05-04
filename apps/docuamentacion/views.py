@@ -82,7 +82,24 @@ class Equipo_Fichas_delete(DeleteView):
 def ficha_cat_tecnologias_list(request):
 	ficha_tec = ficha_cat_tecnologias.objects.all().order_by('id')
 	contexto = {'ficha_tecno': ficha_tec}
-	return render(request, 'documentacion/Ficha Tecnologias/ficha_tecnologia_list.html', contexto)
+	return render(request, 'documentacion/Ficha_Tecnologias/ficha_tecnologia_list.html', contexto)
+
+class ficha_cat_tecnologias_view(CreateView):
+	model = ficha_cat_tecnologias
+	form_class = Ficha_Cat_Tecnologias_Form
+	template_name = 'documentacion/Ficha_Tecnologias/ficha_tecnologia_form.html'
+	success_url = reverse_lazy('documentacion:ficha_tecnologia_listar')
+
+class ficha_cat_tecnologias_update(UpdateView):
+	model = ficha_cat_tecnologias
+	form_class = Ficha_Cat_Tecnologias_Form
+	template_name = 'documentacion/Ficha_Tecnologias/ficha_tecnologia_form.html'
+	success_url = reverse_lazy('documentacion:ficha_tecnologia_listar')
+
+class ficha_cat_tecnologias_delete(DeleteView):
+	model = ficha_cat_tecnologias
+	template_name = 'documentacion/Ficha_Tecnologias/ficha_tecnologia_delete.html'
+	success_url = reverse_lazy('documentacion:ficha_tecnologia_listar')
 
 # documento_archivo
 def documento_archivo_list(request):
@@ -90,4 +107,31 @@ def documento_archivo_list(request):
 	contexto = {'documentos': documento}
 	return render(request, 'documentacion/Documentos/documento_list.html', contexto)
 
+class documento_archivo_view(CreateView):
+	model = documento_archivo
+	form_class = Documento_Archivo_Form
+	template_name = 'documentacion/Documentos/documento_form.html'
+	success_url = reverse_lazy('documentacion:documento_listar')
+
+class documento_archivo_update(UpdateView):
+	model = documento_archivo
+	form_class = Documento_Archivo_Form
+	template_name = 'documentacion/Documentos/documento_form.html'
+	success_url = reverse_lazy('documentacion:documento_listar')
+
+class documento_archivo_delete(DeleteView):
+	model = documento_archivo
+	template_name = 'documentacion/Documentos/documento_delete.html'
+	success_url = reverse_lazy('documentacion:documento_listar')
+
 # logtable
+def logtable_list(request):
+	logtab = logtable.objects.all().order_by('id')
+	contexto = {'logtable': logtab}
+	return render(request, 'documentacion/Logtable/logtable_list.html', contexto)
+
+class logtable_view(CreateView):
+	model = logtable
+	form_class = Logtable_Form
+	template_name = 'documentacion/Logtable/logtable_form.html'
+	success_url = reverse_lazy('documentacion:logtable_listar')

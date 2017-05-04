@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 
-{% block title %}Documentación | Equipo Fichas{% endblock %}
+{% block title %}Documentación | Ficha Tecnologia{% endblock %}
 {% block content %}
 	<body class="no-skin">
 		<!-- #section:basics/navbar.layout -->
@@ -485,7 +485,7 @@
 								<b class="arrow"></b>
 							</li>
 
-                            <li class="active">
+                            <li class="">
 								<a href="#">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Equipo Ficha
@@ -494,7 +494,7 @@
 								<b class="arrow"></b>
 							</li>
 
-                            <li class="">
+                            <li class="active">
 								<a href="#">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Ficha Tecnologias
@@ -553,7 +553,7 @@
 							<li>
 								<a href="#">Documentacion</a>
 							</li>
-							<li class="active">Equipo Ficha</li>
+							<li class="active">Ficha Tecnologias</li>
 						</ul><!-- /.breadcrumb -->
 
 						<!-- #section:basics/content.searchbox -->
@@ -663,10 +663,10 @@
                         <!-- /section:settings.box -->
 						<div class="page-header">
 							<h1>
-								Equipo Ficha
+								Ficha Tecnologias
 								<small>
 									<i class="ace-icon fa fa-angle-double-right"></i>
-									Formulario de Equipo Ficha
+									Eliminar Ficha Tecnologia
 								</small>
 							</h1>
 						</div><!-- /.page-header -->
@@ -676,36 +676,11 @@
 						<div class="row">
 							<div class="col-xs-12">
 								<!-- PAGE CONTENT BEGINS -->
-                                <form class="form-horizontal" method="post">
+                                <form method="post">
                                     {% csrf_token %}
-                                    <div class="form-group">
-                                        <label class="col-sm-4 control-label no-padding-right" for="form-field-1">Ficha </label>
-                                        <div class="col-sm-3">
-											{{ form.ficha_id }}
-										</div>
-									</div>
-                                    <div class="form-group">
-                                        <label class="col-sm-4 control-label no-padding-right" for="form-field-1">Persona </label>
-										<div class="col-sm-3">
-											{{ form.cat_personas_id }}
-										</div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-sm-4 control-label no-padding-right" for="form-field-1">Especialidad </label>
-										<div class="col-sm-3">
-											{{ form.cat_especialidad_id }}
-										</div>
-                                    </div>
-                                    <div class="clearfix form-actions">
-										<div class="col-md-offset-4 col-md-9">
-											<button class="btn btn-xs btn-info" type="submit">
-												<i class="ace-icon fa fa-check bigger-110"></i>
-												Guardar
-											</button>
-                                            <a href="javascript:history.back(-1);"><input type="button" class="btn btn-xs" value="volver"></a>
-										</div>
-									</div>
-
+                                    <h3>¿Desea eliminar el siguiente registro? <b>{{ object.ficha_id }}</b></h3>
+                                    <button class="btn btn-xs btn-danger" type="submit">Sí, eliminar</button>
+                                    <a class= "btn btn-xs btn-default" href="{% url 'documentacion:ficha_tecnologia_listar' %}">Cancelar</a>
                                 </form>
 								<!-- PAGE CONTENT ENDS -->
 							</div><!-- /.col -->

@@ -28,7 +28,7 @@
 					<a href="#" class="navbar-brand">
 						<small>
 							<i class="fa fa-leaf"></i>
-							CMAIG
+							Ace Admin
 						</small>
 					</a>
 
@@ -389,7 +389,7 @@
 				</div><!-- /.sidebar-shortcuts -->
 
 				<ul class="nav nav-list">
-					<li class="activate open">
+					<li class="">
                         <a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-laptop"></i>
 							<span class="menu-text"> Catalogos </span>
@@ -436,7 +436,7 @@
 								<b class="arrow"></b>
 							</li>
 
-                            <li class="active">
+                            <li class="">
 								<a href="{% url 'catalogos:estatus_listar' %}">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Estatus
@@ -456,8 +456,7 @@
 						</ul>
 					</li>
 
-
-					<li class="">
+					<li class="active open">
                         <a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-folder-o"></i>
 							<span class="menu-text"> Documentacion </span>
@@ -468,8 +467,8 @@
 						<b class="arrow"></b>
 
 						<ul class="submenu">
-							<li class="">
-								<a href="{% url 'documentacion:credencial_listar' %}">
+							<li class="active">
+								<a href="#">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Credenciales
 								</a>
@@ -478,7 +477,7 @@
 							</li>
 
                             <li class="">
-								<a href="{% url 'documentacion:ficha_listar' %}">
+								<a href="#">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Fichas
 								</a>
@@ -487,7 +486,7 @@
 							</li>
 
                             <li class="">
-								<a href="{% url 'documentacion:equipo_ficha_listar' %}">
+								<a href="#">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Equipo Ficha
 								</a>
@@ -496,7 +495,7 @@
 							</li>
 
                             <li class="">
-								<a href="{% url 'documentacion:ficha_tecnologia_listar' %}">
+								<a href="#">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Ficha Tecnologias
 								</a>
@@ -505,7 +504,7 @@
 							</li>
 
                             <li class="">
-								<a href="{% url 'documentacion:documento_listar' %}">
+								<a href="#">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Documento / Archivos
 								</a>
@@ -514,9 +513,9 @@
 							</li>
 
                             <li class="">
-								<a href="{% url 'documentacion:logtable_listar' %}">
+								<a href="#">
 									<i class="menu-icon fa fa-caret-right"></i>
-									LogTable
+									Logo
 								</a>
 
 								<b class="arrow"></b>
@@ -552,16 +551,16 @@
 							</li>
 
 							<li>
-								<a href="#">Catalogos</a>
+								<a href="#">Documentacion</a>
 							</li>
-							<li class="active">Estatus</li>
+							<li class="active">Credenciales</li>
 						</ul><!-- /.breadcrumb -->
 
 						<!-- #section:basics/content.searchbox -->
 						<div class="nav-search" id="nav-search">
 							<form class="form-search">
 								<span class="input-icon">
-									<input type="text" placeholder="Buscar ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
 									<i class="ace-icon fa fa-search nav-search-icon"></i>
 								</span>
 							</form>
@@ -664,71 +663,64 @@
                         <!-- /section:settings.box -->
 						<div class="page-header">
 							<h1>
-								Catalogos <small>Catalogos de Estatus</small>
+								Credenciales
+								<small>
+									<i class="ace-icon fa fa-angle-double-right"></i>
+									Eliminar Credencial
+								</small>
 							</h1>
 						</div><!-- /.page-header -->
 
 
 						<!-- /section:settings.box -->
-                        <div class="row">
-
+						<div class="row">
 							<div class="col-xs-12">
 								<!-- PAGE CONTENT BEGINS -->
-								<div class="row">
-									<div class="col-sm-12">
-                                       <a href="{% url 'catalogos:estatus_nuevo' %}">
-                                       <button class="btn btn-xs btn-primary pull-right">
-                                            <i class="ace-icon fa fa-plus align-top bigger-125"></i>
-                                            Agregar
-                                        </button></a><br><br>
-													<table class="table table-bordered">
-                                                        <thead>
-                                                            <tr>
-                                                                <td>ID</td>
-                                                                <td>Descripcion</td>
-                                                                <td>Acciones</td>
-                                                            </tr>
-
-                                                        </thead>
-                                                        <tbody>
-                                                            {% if estatus %}
-                                                            {% for estatus in estatus %}
-                                                            <tr>
-                                                                <td><a href="#"> {{ estatus.id }} </a></td>
-                                                                <td><a href="#"> {{ estatus.descripcion }} </a></td>
-                                                                <td>
-                                                                    <div class="hidden-sm hidden-xs btn-xs btn-group">
-
-                                                                        <a class= "btn btn-xs btn-info" href="{% url 'catalogos:estatus_editar' estatus.id %}"><i class="ace-icon fa fa-pencil bigger-120"></i></a>
-                                                                        <a class= "btn btn-xs btn-danger" href="{% url 'catalogos:estatus_eliminar' estatus.id %}"><i class="ace-icon fa fa-trash-o bigger-120"></i></a>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            {% endfor %}
-
-                                                            {% else %}
-                                                            <h1>No hay registros</h1>
-                                                            {% endif %}
-                                                        </tbody>
-                                                    </table>
-                                                    <ul class="pager">
-                                                        <li>
-                                                            {% if page_obj.has_previous %}
-                                                             <a href="?page={{ page_obj.previous_page_number }}">Anterior</a>
-                                                            {% endif %}
-                                                            </li>
-                                                        <li>
-                                                            {% if page_obj.has_next %}
-                                                             <a href="?page={{ page_obj.next_page_number }}">Siguente</a>
-                                                            {% endif %}
-                                                        </li>
-                                                    </ul>
-									</div><!-- /.col -->
-                                </div>
+                                <form method="post">
+                                    {% csrf_token %}
+                                    <h3>¿Desea eliminar el usuario <b>{{ object.usuario }}</b>?</h3>
+                                    <button class="btn btn-xs btn-danger" type="submit">Sí, eliminar</button>
+                                    <a class= "btn btn-xs btn-default" href="{% url 'documentacion:credencial_listar' %}">Cancelar</a>
+                                </form>
+								<!-- PAGE CONTENT ENDS -->
+							</div><!-- /.col -->
+						</div><!-- /.row -->
 					</div><!-- /.page-content -->
 				</div>
 			</div><!-- /.main-content -->
 
+			<div class="footer">
+				<div class="footer-inner">
+					<!-- #section:basics/footer -->
+					<div class="footer-content">
+						<span class="bigger-120">
+							<span class="blue bolder">Ace</span>
+							Application &copy; 2013-2014
+						</span>
+
+						&nbsp; &nbsp;
+						<span class="action-buttons">
+							<a href="#">
+								<i class="ace-icon fa fa-twitter-square light-blue bigger-150"></i>
+							</a>
+
+							<a href="#">
+								<i class="ace-icon fa fa-facebook-square text-primary bigger-150"></i>
+							</a>
+
+							<a href="#">
+								<i class="ace-icon fa fa-rss-square orange bigger-150"></i>
+							</a>
+						</span>
+					</div>
+
+					<!-- /section:basics/footer -->
+				</div>
+			</div>
+
+			<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+				<i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
+			</a>
 		</div><!-- /.main-container -->
 	</body>
 {% endblock %}

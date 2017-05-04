@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 
-{% block title %}Tipo de Catalogo{% endblock %}
+{% block title %}Documentación | LogTable{% endblock %}
 {% block content %}
 	<body class="no-skin">
 		<!-- #section:basics/navbar.layout -->
@@ -28,7 +28,7 @@
 					<a href="#" class="navbar-brand">
 						<small>
 							<i class="fa fa-leaf"></i>
-							CMAIG
+							Ace Admin
 						</small>
 					</a>
 
@@ -389,7 +389,7 @@
 				</div><!-- /.sidebar-shortcuts -->
 
 				<ul class="nav nav-list">
-					<li class="activate open">
+					<li class="">
                         <a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-laptop"></i>
 							<span class="menu-text"> Catalogos </span>
@@ -436,7 +436,7 @@
 								<b class="arrow"></b>
 							</li>
 
-                            <li class="active">
+                            <li class="">
 								<a href="{% url 'catalogos:estatus_listar' %}">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Estatus
@@ -457,7 +457,7 @@
 					</li>
 
 
-					<li class="">
+					<li class="activate open">
                         <a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-folder-o"></i>
 							<span class="menu-text"> Documentacion </span>
@@ -513,7 +513,7 @@
 								<b class="arrow"></b>
 							</li>
 
-                            <li class="">
+                            <li class="active">
 								<a href="{% url 'documentacion:logtable_listar' %}">
 									<i class="menu-icon fa fa-caret-right"></i>
 									LogTable
@@ -552,16 +552,16 @@
 							</li>
 
 							<li>
-								<a href="#">Catalogos</a>
+								<a href="#">Documentacion</a>
 							</li>
-							<li class="active">Estatus</li>
+							<li class="active">LogTable</li>
 						</ul><!-- /.breadcrumb -->
 
 						<!-- #section:basics/content.searchbox -->
 						<div class="nav-search" id="nav-search">
 							<form class="form-search">
 								<span class="input-icon">
-									<input type="text" placeholder="Buscar ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
 									<i class="ace-icon fa fa-search nav-search-icon"></i>
 								</span>
 							</form>
@@ -664,7 +664,7 @@
                         <!-- /section:settings.box -->
 						<div class="page-header">
 							<h1>
-								Catalogos <small>Catalogos de Estatus</small>
+								LogTable <small>Lista de Registros</small>
 							</h1>
 						</div><!-- /.page-header -->
 
@@ -676,7 +676,7 @@
 								<!-- PAGE CONTENT BEGINS -->
 								<div class="row">
 									<div class="col-sm-12">
-                                       <a href="{% url 'catalogos:estatus_nuevo' %}">
+                                       <a href="{% url 'documentacion:logtable_nuevo' %}">
                                        <button class="btn btn-xs btn-primary pull-right">
                                             <i class="ace-icon fa fa-plus align-top bigger-125"></i>
                                             Agregar
@@ -684,23 +684,29 @@
 													<table class="table table-bordered">
                                                         <thead>
                                                             <tr>
-                                                                <td>ID</td>
-                                                                <td>Descripcion</td>
+                                                                <td>Usuario</td>
+                                                                <td>Fecha</td>
+                                                                <td>Tabla</td>
+                                                                <td>Registro</td>
+                                                                <td>Tipo Movimineto</td>
                                                                 <td>Acciones</td>
                                                             </tr>
 
                                                         </thead>
                                                         <tbody>
-                                                            {% if estatus %}
-                                                            {% for estatus in estatus %}
+                                                            {% if logtable %}
+                                                            {% for logtab in logtable %}
                                                             <tr>
-                                                                <td><a href="#"> {{ estatus.id }} </a></td>
-                                                                <td><a href="#"> {{ estatus.descripcion }} </a></td>
+                                                                <td>{{ logtab.usuario_id }}</td>
+                                                                <td>{{ logtab.fecha }}</td>
+                                                                <td>{{ logtab.nametabla }}</td>
+                                                                <td>{{ logtab.registro_id }}</td>
+                                                                <td>{{ logtab.tipomovimiento }}</td>
                                                                 <td>
                                                                     <div class="hidden-sm hidden-xs btn-xs btn-group">
 
-                                                                        <a class= "btn btn-xs btn-info" href="{% url 'catalogos:estatus_editar' estatus.id %}"><i class="ace-icon fa fa-pencil bigger-120"></i></a>
-                                                                        <a class= "btn btn-xs btn-danger" href="{% url 'catalogos:estatus_eliminar' estatus.id %}"><i class="ace-icon fa fa-trash-o bigger-120"></i></a>
+                                                                        <a class= "btn btn-xs btn-info" href="#"><i class="ace-icon fa fa-pencil bigger-120"></i></a>
+                                                                        <a class= "btn btn-xs btn-danger" href="#"><i class="ace-icon fa fa-trash-o bigger-120"></i></a>
                                                                     </div>
                                                                 </td>
                                                             </tr>
@@ -711,24 +717,44 @@
                                                             {% endif %}
                                                         </tbody>
                                                     </table>
-                                                    <ul class="pager">
-                                                        <li>
-                                                            {% if page_obj.has_previous %}
-                                                             <a href="?page={{ page_obj.previous_page_number }}">Anterior</a>
-                                                            {% endif %}
-                                                            </li>
-                                                        <li>
-                                                            {% if page_obj.has_next %}
-                                                             <a href="?page={{ page_obj.next_page_number }}">Siguente</a>
-                                                            {% endif %}
-                                                        </li>
-                                                    </ul>
 									</div><!-- /.col -->
                                 </div>
 					</div><!-- /.page-content -->
 				</div>
 			</div><!-- /.main-content -->
 
+			<div class="footer">
+				<div class="footer-inner">
+					<!-- #section:basics/footer -->
+					<div class="footer-content">
+						<span class="bigger-120">
+							<span class="blue bolder">Ace</span>
+							Application &copy; 2013-2014
+						</span>
+
+						&nbsp; &nbsp;
+						<span class="action-buttons">
+							<a href="#">
+								<i class="ace-icon fa fa-twitter-square light-blue bigger-150"></i>
+							</a>
+
+							<a href="#">
+								<i class="ace-icon fa fa-facebook-square text-primary bigger-150"></i>
+							</a>
+
+							<a href="#">
+								<i class="ace-icon fa fa-rss-square orange bigger-150"></i>
+							</a>
+						</span>
+					</div>
+
+					<!-- /section:basics/footer -->
+				</div>
+			</div>
+
+			<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+				<i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
+			</a>
 		</div><!-- /.main-container -->
 	</body>
 {% endblock %}

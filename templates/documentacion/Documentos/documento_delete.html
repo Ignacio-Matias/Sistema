@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 
-{% block title %}Documentación | Equipo Ficha{% endblock %}
+{% block title %}Documentación | Documento{% endblock %}
 {% block content %}
 	<body class="no-skin">
 		<!-- #section:basics/navbar.layout -->
@@ -485,7 +485,7 @@
 								<b class="arrow"></b>
 							</li>
 
-                            <li class="active">
+                            <li class="">
 								<a href="#">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Equipo Ficha
@@ -503,7 +503,7 @@
 								<b class="arrow"></b>
 							</li>
 
-                            <li class="">
+                            <li class="active">
 								<a href="#">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Documento / Archivos
@@ -553,7 +553,7 @@
 							<li>
 								<a href="#">Documentacion</a>
 							</li>
-							<li class="active">Equipo Ficha</li>
+							<li class="active">Documento / Archivos</li>
 						</ul><!-- /.breadcrumb -->
 
 						<!-- #section:basics/content.searchbox -->
@@ -663,10 +663,10 @@
                         <!-- /section:settings.box -->
 						<div class="page-header">
 							<h1>
-								Equipo Ficha
+								Documento / Archivos
 								<small>
 									<i class="ace-icon fa fa-angle-double-right"></i>
-									Eliminar Equipo Ficha
+									Eliminar Documento / Archivos
 								</small>
 							</h1>
 						</div><!-- /.page-header -->
@@ -678,9 +678,9 @@
 								<!-- PAGE CONTENT BEGINS -->
                                 <form method="post">
                                     {% csrf_token %}
-                                    <h3>¿Desea eliminar al Equipo Ficha <b>{{ object.ficha_id }}</b>?</h3>
+                                    <h3>¿Desea eliminar el siguiente registro? <b>{{ object.cat_documento_id }}</b></h3>
                                     <button class="btn btn-xs btn-danger" type="submit">Sí, eliminar</button>
-                                    <a class= "btn btn-xs btn-default" href="{% url 'documentacion:equipo_ficha_listar' %}">Cancelar</a>
+                                    <a class= "btn btn-xs btn-default" href="{% url 'documentacion:documento_listar' %}">Cancelar</a>
                                 </form>
 								<!-- PAGE CONTENT ENDS -->
 							</div><!-- /.col -->

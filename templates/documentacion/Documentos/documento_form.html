@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 
-{% block title %}Documentación | Equipo Fichas{% endblock %}
+{% block title %}Documentación | Documento{% endblock %}
 {% block content %}
 	<body class="no-skin">
 		<!-- #section:basics/navbar.layout -->
@@ -485,7 +485,7 @@
 								<b class="arrow"></b>
 							</li>
 
-                            <li class="active">
+                            <li class="">
 								<a href="#">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Equipo Ficha
@@ -503,7 +503,7 @@
 								<b class="arrow"></b>
 							</li>
 
-                            <li class="">
+                            <li class="active">
 								<a href="#">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Documento / Archivos
@@ -553,7 +553,7 @@
 							<li>
 								<a href="#">Documentacion</a>
 							</li>
-							<li class="active">Equipo Ficha</li>
+							<li class="active">Documento / Archivo</li>
 						</ul><!-- /.breadcrumb -->
 
 						<!-- #section:basics/content.searchbox -->
@@ -663,10 +663,10 @@
                         <!-- /section:settings.box -->
 						<div class="page-header">
 							<h1>
-								Equipo Ficha
+								Documento / Archivo
 								<small>
 									<i class="ace-icon fa fa-angle-double-right"></i>
-									Formulario de Equipo Ficha
+									Formulario de Documento / Archivo
 								</small>
 							</h1>
 						</div><!-- /.page-header -->
@@ -685,15 +685,9 @@
 										</div>
 									</div>
                                     <div class="form-group">
-                                        <label class="col-sm-4 control-label no-padding-right" for="form-field-1">Persona </label>
+                                        <label class="col-sm-4 control-label no-padding-right" for="form-field-1">Documento </label>
 										<div class="col-sm-3">
-											{{ form.cat_personas_id }}
-										</div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-sm-4 control-label no-padding-right" for="form-field-1">Especialidad </label>
-										<div class="col-sm-3">
-											{{ form.cat_especialidad_id }}
+											{{ form.cat_documento_id }}
 										</div>
                                     </div>
                                     <div class="clearfix form-actions">

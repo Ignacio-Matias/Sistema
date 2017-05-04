@@ -39,3 +39,5 @@ class cat_estatus(models.Model):
 class cat_documentos(models.Model):
     archivoDescripcion = models.FileField(null=True, blank=True)
 
+    def __str__(self):
+        return '{}'.format(self.archivoDescripcion)

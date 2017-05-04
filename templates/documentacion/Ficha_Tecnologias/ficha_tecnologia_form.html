@@ -456,8 +456,7 @@
 						</ul>
 					</li>
 
-
-					<li class="activate open">
+					<li class="active open">
                         <a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-folder-o"></i>
 							<span class="menu-text"> Documentacion </span>
@@ -664,69 +663,53 @@
                         <!-- /section:settings.box -->
 						<div class="page-header">
 							<h1>
-								Ficha Tecnologias <small>Lista de Fichas de Tecnologias</small>
+								Ficha Tecnologias
+								<small>
+									<i class="ace-icon fa fa-angle-double-right"></i>
+									Formulario de Ficha Tecnologias
+								</small>
 							</h1>
 						</div><!-- /.page-header -->
 
 
 						<!-- /section:settings.box -->
-                        <div class="row">
-
+						<div class="row">
 							<div class="col-xs-12">
 								<!-- PAGE CONTENT BEGINS -->
-								<div class="row">
-									<div class="col-sm-12">
-                                       <a href="#">
-                                       <button class="btn btn-xs btn-primary pull-right">
-                                            <i class="ace-icon fa fa-plus align-top bigger-125"></i>
-                                            Agregar
-                                        </button></a><br><br>
-													<table class="table table-bordered">
-                                                        <thead>
-                                                            <tr>
-                                                                <td>Ficha</td>
-                                                                <td>Tecnologia</td>
-                                                                <td>Version</td>
-                                                                <td>Acciones</td>
-                                                            </tr>
+                                <form class="form-horizontal" method="post">
+                                    {% csrf_token %}
+                                    <div class="form-group">
+                                        <label class="col-sm-4 control-label no-padding-right" for="form-field-1">Ficha </label>
+                                        <div class="col-sm-3">
+											{{ form.ficha_id }}
+										</div>
+									</div>
+                                    <div class="form-group">
+                                        <label class="col-sm-4 control-label no-padding-right" for="form-field-1">Tecnologia </label>
+										<div class="col-sm-3">
+											{{ form.cat_tecnologias_id }}
+										</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-4 control-label no-padding-right" for="form-field-1">Version </label>
+										<div class="col-sm-3">
+											{{ form.version }}
+										</div>
+                                    </div>
+                                    <div class="clearfix form-actions">
+										<div class="col-md-offset-4 col-md-9">
+											<button class="btn btn-xs btn-info" type="submit">
+												<i class="ace-icon fa fa-check bigger-110"></i>
+												Guardar
+											</button>
+                                            <a href="javascript:history.back(-1);"><input type="button" class="btn btn-xs" value="volver"></a>
+										</div>
+									</div>
 
-                                                        </thead>
-                                                        <tbody>
-                                                            {% if ficha_tecno %}
-                                                            {% for ficha in ficha_tecno %}
-                                                            <tr>
-                                                                <td>{{ ficha.ficha_id }}</td>
-                                                                <td>{{ ficha.cat_tecnologias_id }}</td>
-                                                                <td>{{ ficha.version }}</td>
-                                                                <td>
-                                                                    <div class="hidden-sm hidden-xs btn-xs btn-group">
-
-                                                                        <a class= "btn btn-xs btn-info" href="#"><i class="ace-icon fa fa-pencil bigger-120"></i></a>
-                                                                        <a class= "btn btn-xs btn-danger" href="#"><i class="ace-icon fa fa-trash-o bigger-120"></i></a>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            {% endfor %}
-
-                                                            {% else %}
-                                                            <h1>No hay registros</h1>
-                                                            {% endif %}
-                                                        </tbody>
-                                                    </table>
-                                                    <ul class="pager">
-                                                        <li>
-                                                            {% if page_obj.has_previous %}
-                                                             <a href="?page={{ page_obj.previous_page_number }}">Anterior</a>
-                                                            {% endif %}
-                                                            </li>
-                                                        <li>
-                                                            {% if page_obj.has_next %}
-                                                             <a href="?page={{ page_obj.next_page_number }}">Siguente</a>
-                                                            {% endif %}
-                                                        </li>
-                                                    </ul>
-									</div><!-- /.col -->
-                                </div>
+                                </form>
+								<!-- PAGE CONTENT ENDS -->
+							</div><!-- /.col -->
+						</div><!-- /.row -->
 					</div><!-- /.page-content -->
 				</div>
 			</div><!-- /.main-content -->

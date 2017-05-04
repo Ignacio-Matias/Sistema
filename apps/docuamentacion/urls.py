@@ -32,5 +32,7 @@ urlpatterns = [
     # logtable
     url(r'^logtable/listar', login_required(logtable_list), name='logtable_listar'),
     url(r'^logtable/nuevo', login_required(logtable_view.as_view()), name='logtable_nuevo'),
+    url(r'^logtable/editar/(?P<pk>\d+)/$', login_required(logtable_update.as_view()), name='logtable_editar'),
+    url(r'^logtable/eliminar/(?P<pk>\d+)/$', login_required(logtable_delete.as_view()), name='logtable_eliminar'),
 
 ]

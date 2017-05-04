@@ -135,3 +135,14 @@ class logtable_view(CreateView):
 	form_class = Logtable_Form
 	template_name = 'documentacion/Logtable/logtable_form.html'
 	success_url = reverse_lazy('documentacion:logtable_listar')
+
+class logtable_update(UpdateView):
+	model = logtable
+	form_class = Logtable_Form
+	template_name = 'documentacion/Logtable/logtable_form.html'
+	success_url = reverse_lazy('documentacion:logtable_listar')
+
+class logtable_delete(DeleteView):
+	model = logtable
+	template_name = 'documentacion/Logtable/logtable_delete.html'
+	success_url = reverse_lazy('documentacion:logtable_listar')

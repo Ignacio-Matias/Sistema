@@ -24,7 +24,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apps/docuamentacion/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="414">
@@ -51,8 +51,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/docuamentacion/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="132" column="19" lean-forward="false" selection-start-line="132" selection-start-column="6" selection-end-line="132" selection-end-column="19" />
+            <state relative-caret-position="268">
+              <caret line="138" column="21" lean-forward="false" selection-start-line="138" selection-start-column="6" selection-end-line="138" selection-end-column="21" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -60,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="logtable_form.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="logtable_form.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/documentacion/Logtable/logtable_form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="691" column="46" lean-forward="true" selection-start-line="691" selection-start-column="46" selection-end-line="691" selection-end-column="46" />
+            <state relative-caret-position="458">
+              <caret line="714" column="56" lean-forward="false" selection-start-line="714" selection-start-column="56" selection-end-line="714" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -73,8 +73,8 @@
       <file leaf-file-name="logtable_list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/documentacion/Logtable/logtable_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="678" column="84" lean-forward="false" selection-start-line="678" selection-start-column="84" selection-end-line="678" selection-end-column="84" />
+            <state relative-caret-position="658">
+              <caret line="708" column="151" lean-forward="false" selection-start-line="708" selection-start-column="151" selection-end-line="708" selection-end-column="151" />
               <folding />
             </state>
           </provider>
@@ -83,8 +83,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/docuamentacion/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="33" column="89" lean-forward="false" selection-start-line="33" selection-start-column="75" selection-end-line="33" selection-end-column="89" />
+            <state relative-caret-position="397">
+              <caret line="35" column="102" lean-forward="false" selection-start-line="35" selection-start-column="102" selection-end-line="35" selection-end-column="102" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -147,10 +147,10 @@
         <option value="$PROJECT_DIR$/templates/catalogos/Personas/personas_list.html" />
         <option value="$PROJECT_DIR$/templates/catalogos/Especialidades/especialidad_list.html" />
         <option value="$PROJECT_DIR$/templates/catalogos/Estatus/estatus_list.html" />
+        <option value="$PROJECT_DIR$/templates/documentacion/Logtable/logtable_form.html" />
         <option value="$PROJECT_DIR$/apps/docuamentacion/views.py" />
         <option value="$PROJECT_DIR$/apps/docuamentacion/urls.py" />
         <option value="$PROJECT_DIR$/templates/documentacion/Logtable/logtable_list.html" />
-        <option value="$PROJECT_DIR$/templates/documentacion/Logtable/logtable_form.html" />
       </list>
     </option>
   </component>
@@ -601,7 +601,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1370" height="744" extended-state="1" />
+    <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1018,6 +1018,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/documentacion/Logtable/logtable_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="714" column="56" lean-forward="false" selection-start-line="714" selection-start-column="56" selection-end-line="714" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/documentacion/Logtable/logtable_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="658">
+          <caret line="708" column="151" lean-forward="false" selection-start-line="708" selection-start-column="151" selection-end-line="708" selection-end-column="151" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/docuamentacion/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="35" column="102" lean-forward="false" selection-start-line="35" selection-start-column="102" selection-end-line="35" selection-end-column="102" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/docuamentacion/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="138" column="21" lean-forward="false" selection-start-line="138" selection-start-column="6" selection-end-line="138" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/apps/docuamentacion/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
@@ -1028,34 +1064,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/docuamentacion/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="132" column="19" lean-forward="false" selection-start-line="132" selection-start-column="6" selection-end-line="132" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/docuamentacion/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="33" column="89" lean-forward="false" selection-start-line="33" selection-start-column="75" selection-end-line="33" selection-end-column="89" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/documentacion/Logtable/logtable_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="678" column="84" lean-forward="false" selection-start-line="678" selection-start-column="84" selection-end-line="678" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/docuamentacion/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
@@ -1063,14 +1071,6 @@
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/documentacion/Logtable/logtable_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="691" column="46" lean-forward="true" selection-start-line="691" selection-start-column="46" selection-end-line="691" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>

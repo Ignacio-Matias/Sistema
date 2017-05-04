@@ -17,5 +17,6 @@ urlpatterns = [
     url(r'^equipo-ficha/editar/(?P<pk>\d+)/$', login_required(Equipo_Fichas_update.as_view()), name='equipo_ficha_editar'),
     url(r'^equipo-ficha/eliminar/(?P<pk>\d+)/$', login_required(Equipo_Fichas_delete.as_view()), name='equipo_ficha_eliminar'),
     url(r'^ficha-tecnologia/listar', login_required(ficha_cat_tecnologias_list), name='ficha_tecnologia_listar'),
+    url(r'^documento/listar', login_required(documento_archivo_list), name='documento_listar'),
 
 ]

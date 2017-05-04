@@ -85,5 +85,9 @@ def ficha_cat_tecnologias_list(request):
 	return render(request, 'documentacion/Ficha Tecnologias/ficha_tecnologia_list.html', contexto)
 
 # documento_archivo
+def documento_archivo_list(request):
+	documento = documento_archivo.objects.all().order_by('id')
+	contexto = {'documentos': documento}
+	return render(request, 'documentacion/Documentos/documento_list.html', contexto)
 
 # logtable

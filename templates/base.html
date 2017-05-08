@@ -16,6 +16,9 @@
 
 		<!-- text fonts -->
 		<link rel="stylesheet" href="{% static 'assets/css/ace-fonts.css' %}" />
+        <link rel="stylesheet" href="{% static 'assets/css/jquery-ui.css' %}" />
+        <!-- ace settings handler -->
+		<script src="{% static 'assets/js/ace-extra.js' %}"></script>
 
 		<!-- ace styles -->
 		<link rel="stylesheet" href="{% static 'assets/css/ace.css' %}" />
@@ -30,7 +33,6 @@
 		<![endif]-->
 
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-
 		<!--[if lt IE 9]>
 		<script src="{% static 'assets/js/html5shiv.js' %}"></script>
 		<script src="{% static 'assets/js/respond.js' %}"></script>
@@ -38,6 +40,7 @@
 
         <!-- ace settings handler -->
 		<script src="{% static 'assets/js/ace-extra.js' %}"></script>
+
 	</head>
 
     {#  CONTENIDO #}
@@ -57,6 +60,7 @@
  window.jQuery || document.write("<script src='../assets/js/jquery1x.js'>"+"<"+"/script>");
 </script>
 <![endif]-->
+
 		<script type="text/javascript">
 			if('ontouchstart' in document.documentElement) document.write("<script src='{% static 'assets/js/jquery.mobile.custom.js' %}'>"+"<"+"/script>");
 		</script>

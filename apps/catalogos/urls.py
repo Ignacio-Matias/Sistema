@@ -1,10 +1,15 @@
 from django.conf.urls import url
 from django.contrib.auth.decorators import login_required
 
+
 from apps.catalogos.views import *
+from apps.catalogos.ajax import eliminar_identificador
+
 
 urlpatterns = [
-    url(r'^tipo/listar', login_required(catalogo_list.as_view()), name='catalogo_listar'),
+    #url(r'^tipo/listar', login_required(catalogo_list.as_view()), name='catalogo_listar'),
+    url(r'^tipo/listar/', login_required(catalogo_list), name='catalogo_listar'),
+    url(r'eliminar_identificador/$', eliminar_identificador, name='eliminar_identificador'),
     url(r'^tipo/nuevo', login_required(catalogo_view), name='catalogo_nuevo'),
     url(r'^tipo/editar/(?P<pk>\d+)/$', login_required(catalogo_update.as_view()), name='catalogo_editar'),
     url(r'^tipo/eliminar/(?P<pk>\d+)/$', login_required(catalogo_delete.as_view()), name='catalogo_eliminar'),

@@ -676,7 +676,7 @@
 								<!-- PAGE CONTENT BEGINS -->
 								<div class="row">
 									<div class="col-sm-12">
-                                       <a href="#">
+                                       <a href="{% url 'documentacion:documento_nuevo'%}">
                                        <button class="btn btn-xs btn-primary pull-right">
                                             <i class="ace-icon fa fa-plus align-top bigger-125"></i>
                                             Agregar
@@ -699,8 +699,8 @@
                                                                 <td>
                                                                     <div class="hidden-sm hidden-xs btn-xs btn-group">
 
-                                                                        <a class= "btn btn-xs btn-info" href="#"><i class="ace-icon fa fa-pencil bigger-120"></i></a>
-                                                                        <a class= "btn btn-xs btn-danger" href="#"><i class="ace-icon fa fa-trash-o bigger-120"></i></a>
+                                                                        <a class= "btn btn-xs btn-info" href="{% url 'documentacion:documento_editar' documento.id %}"><i class="ace-icon fa fa-pencil bigger-120"></i></a>
+                                                                        <a class= "btn btn-xs btn-danger" href="{% url 'documentacion:documento_eliminar' documento.id %}"><i class="ace-icon fa fa-trash-o bigger-120"></i></a>
                                                                     </div>
                                                                 </td>
                                                             </tr>

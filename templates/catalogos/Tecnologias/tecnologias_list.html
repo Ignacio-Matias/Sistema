@@ -675,19 +675,19 @@
 							<div class="col-xs-12">
 								<!-- PAGE CONTENT BEGINS -->
 								<div class="row">
-									<div class="col-sm-12">
+									<div class="col-md-7">
                                        <a href="{% url 'catalogos:tecnologia_nuevo' %}">
                                        <button class="btn btn-xs btn-primary pull-right">
                                             <i class="ace-icon fa fa-plus align-top bigger-125"></i>
                                             Agregar
                                         </button></a><br><br>
-													<table class="table table-bordered">
+                                                    <table class="table table-bordered table-striped">
                                                         <thead>
                                                             <tr>
-                                                                <td>id</td>
-                                                                <td>descripcion</td>
-                                                                <td>tipo de catalogo</td>
-                                                                <td>Acciones</td>
+                                                                <td class="center">#</td>
+                                                                <td>Descripcion</td>
+                                                                <td>Tipo de Catalogo</td>
+                                                                <td class="center">Acciones</td>
                                                             </tr>
 
                                                         </thead>
@@ -695,21 +695,18 @@
                                                             {% if tecnologias %}
                                                             {% for tecnologia in tecnologias %}
                                                             <tr>
-                                                                <td>{{ tecnologia.id }}</td>
-                                                                <td><a href="#"> {{ tecnologia.descripcion }} </a></td>
-                                                                <td><a href="#"> {{ tecnologia.tipo_id }} </a></td>
-                                                                <td>
-                                                                    <div class="hidden-sm hidden-xs btn-xs btn-group">
-
-                                                                        <a class= "btn btn-xs btn-info" href="{% url 'catalogos:tecnologia_editar' tecnologia.id %}"><i class="ace-icon fa fa-pencil bigger-120"></i></a>
-                                                                        <a class= "btn btn-xs btn-danger" href="{% url 'catalogos:tecnologia_eliminar' tecnologia.id %}"><i class="ace-icon fa fa-trash-o bigger-120"></i></a>
-                                                                    </div>
-                                                                </td>
+                                                                <td class="center">{{ tecnologia.id }}</td>
+                                                                <td class="green">{{ tecnologia.descripcion }}</td>
+                                                                <td class="red">{{ tecnologia.tipo_id }}</td>
+                                                                <td class="hidden-480 center">
+																	<a href="{% url 'catalogos:tecnologia_editar' tecnologia.id %}"><span class="label label-info arrowed-right arrowed-in">editar <i class="ace-icon fa fa-pencil bigger-120"></i></span></a>
+																	<a href="{% url 'catalogos:tecnologia_eliminar' tecnologia.id %}"><span class="label label-danger arrowed-right arrowed-in">eliminar <i class="ace-icon fa fa-trash bigger-120"></i></span></a>
+																</td>
                                                             </tr>
                                                             {% endfor %}
 
                                                             {% else %}
-                                                            <h1>No hay registros de catalogos de tecnologias</h1>
+                                                            <h1>No hay registros de catalogos</h1>
                                                             {% endif %}
                                                         </tbody>
                                                     </table>
@@ -726,6 +723,14 @@
                                                         </li>
                                                     </ul>
 									</div><!-- /.col -->
+                                    <div class="col-md-5">
+                                        <br><br>
+                                        <div class="well">
+											<h4 class="blue smaller lighter">Tipos de Catalogos</h4>
+											Use the well as a simple effect on an element to give it an inset effect.
+										</div>
+
+                                    </div>
                                 </div>
 					</div><!-- /.page-content -->
 				</div>

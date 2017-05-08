@@ -116,5 +116,6 @@ class Logtable_Form(forms.ModelForm):
             'registro_id',
             'tipomovimiento',
 		]
+	
 
 

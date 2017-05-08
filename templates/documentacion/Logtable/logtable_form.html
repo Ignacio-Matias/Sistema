@@ -679,37 +679,27 @@
                                     <form class="form-horizontal" method="post">
                                         {% csrf_token %}
                                         <div class="form-group">
-                                            <label class="col-sm-4 control-label no-padding-right" for="form-field-1">ID Usuario </label>
-                                            <div class="col-sm-3">
-                                                <input type="text" class="col-sm-8" name="usuario_id">
-                                            </div>
+                                            <label class="col-md-5 control-label">ID Usuario </label>
+                                                {{ form.usuario_id }}
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-4 control-label no-padding-right" for="form-field-1">Fecha </label>
-                                            <div class="col-sm-3">
-                                                <input type="date" class="col-sm-8" name="fecha">
-                                            </div>
+                                            <label class="col-md-5 control-label">Fecha </label>
+                                             {{ form.fecha }} dd/mm/aaaa
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-4 control-label no-padding-right" for="form-field-1">Nombre de la Tabla </label>
-                                            <div class="col-sm-3">
-                                                <input type="text" class="col-sm-8" name="nametabla">
-                                            </div>
+                                            <label class="col-md-5 control-label">Nombre de la Tabla </label>
+                                                {{ form.nametabla }}
 									    </div>
                                         <div class="form-group">
-                                            <label class="col-sm-4 control-label no-padding-right" for="form-field-1">ID Registro </label>
-                                            <div class="col-sm-3">
-                                                <input type="text" class="col-sm-8" name="registro_id">
-                                            </div>
+                                            <label class="col-md-5 control-label">ID Registro </label>
+                                                {{ form.registro_id }}
 									    </div>
                                         <div class="form-group">
-                                            <label class="col-sm-4 control-label no-padding-right" for="form-field-1">Tipo de Movimiento </label>
-                                            <div class="col-sm-3">
-                                                <input type="text" class="col-sm-8" name="tipomovimiento">
-                                            </div>
+                                            <label class="col-md-5 control-label">Tipo de Movimiento </label>
+                                                {{ form.tipomovimiento }}
 									    </div>
                                         <div class="clearfix form-actions">
-                                            <div class="col-md-offset-4 col-md-9">
+                                            <div class="col-md-offset-5 col-md-8">
                                                 <button class="btn btn-xs btn-info" type="submit">
                                                     <i class="ace-icon fa fa-check bigger-110"></i>
                                                     Guardar

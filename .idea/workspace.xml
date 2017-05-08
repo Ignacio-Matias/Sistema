@@ -39,11 +39,11 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/catalogos/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="68">
               <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
-                <marker date="1494270053216" expanded="true" signature="230:2565" ph="..." />
+                <marker date="1494271509196" expanded="true" signature="230:2565" ph="..." />
               </folding>
             </state>
           </provider>
@@ -52,8 +52,8 @@
       <file leaf-file-name="catalogo_list.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/catalogos/catalogo_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="701" column="81" lean-forward="false" selection-start-line="701" selection-start-column="81" selection-end-line="701" selection-end-column="81" />
+            <state relative-caret-position="255">
+              <caret line="708" column="70" lean-forward="true" selection-start-line="708" selection-start-column="70" selection-end-line="708" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -733,11 +733,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/catalogos/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="68">
           <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
-            <marker date="1494270053216" expanded="true" signature="230:2565" ph="..." />
+            <marker date="1494271509196" expanded="true" signature="230:2565" ph="..." />
           </folding>
         </state>
       </provider>
@@ -944,8 +944,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/catalogos/catalogo_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="701" column="81" lean-forward="false" selection-start-line="701" selection-start-column="81" selection-end-line="701" selection-end-column="81" />
+        <state relative-caret-position="255">
+          <caret line="708" column="70" lean-forward="true" selection-start-line="708" selection-start-column="70" selection-end-line="708" selection-end-column="70" />
           <folding />
         </state>
       </provider>

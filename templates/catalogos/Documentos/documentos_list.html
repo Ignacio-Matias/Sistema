@@ -675,19 +675,19 @@
 							<div class="col-xs-12">
 								<!-- PAGE CONTENT BEGINS -->
 								<div class="row">
-									<div class="col-sm-12">
+									<div class="col-md-7">
                                        <a href="{% url 'catalogos:documentos_nuevo' %}">
                                        <button class="btn btn-xs btn-primary pull-right">
                                             <i class="ace-icon fa fa-plus align-top bigger-125"></i>
                                             Agregar
                                         </button></a><br><br>
-													<table class="table table-bordered">
+                                                    <table class="table table-bordered table-striped">
                                                         <thead>
                                                             <tr>
-                                                                <td>ID</td>
-                                                                <td>Documento</td>
+                                                                <td class="center">#</td>
+                                                                <td class="center">Documento</td>
                                                                 <td>Nombre</td>
-                                                                <td>Acciones</td>
+                                                                <td class="center">Acciones</td>
                                                             </tr>
 
                                                         </thead>
@@ -695,21 +695,19 @@
                                                             {% if documentos %}
                                                             {% for documento in documentos %}
                                                             <tr>
-                                                                <td><a href="#"> {{ documento.id }} </a></td>
-                                                                <td>{% if documento.archivoDescripcion %}
-                                                                        <img src="{{ documento.archivoDescripcion.url }}" width="50px">
+                                                                <td class="center">{{ documento.id }}</td>
+                                                                <td class="green center">
+                                                                    {% if documento.archivoDescripcion %}
+                                                                        <img src="{{ documento.archivoDescripcion.url }}" width="25px">
                                                                     {% else %}
                                                                     <h4>No hay Documento</h4>
                                                                     {% endif %}
                                                                 </td>
                                                                 <td><a href="{{ documento.archivoDescripcion.url }}"> {{ documento.archivoDescripcion }} </a></td>
-                                                                <td>
-                                                                    <div class="hidden-sm hidden-xs btn-xs btn-group">
-
-                                                                        <a class= "btn btn-xs btn-info" href="{% url 'catalogos:documentos_editar' documento.id %}"><i class="ace-icon fa fa-pencil bigger-120"></i></a>
-                                                                        <a class= "btn btn-xs btn-danger" href="{% url 'catalogos:documentos_eliminar' documento.id %}"><i class="ace-icon fa fa-trash-o bigger-120"></i></a>
-                                                                    </div>
-                                                                </td>
+                                                                <td class="hidden-480 center">
+																	<a href="{% url 'catalogos:documentos_editar' documento.id %}"><span class="label label-info arrowed-right arrowed-in">editar <i class="ace-icon fa fa-pencil bigger-120"></i></span></a>
+																	<a href="{% url 'catalogos:documentos_eliminar' documento.id %}"><span class="label label-danger arrowed-right arrowed-in">eliminar <i class="ace-icon fa fa-trash bigger-120"></i></span></a>
+																</td>
                                                             </tr>
                                                             {% endfor %}
 
@@ -718,7 +716,16 @@
                                                             {% endif %}
                                                         </tbody>
                                                     </table>
+
 									</div><!-- /.col -->
+                                    <div class="col-md-5">
+                                        <br><br>
+                                        <div class="well">
+											<h4 class="green smaller lighter">Normal Well</h4>
+											Use the well as a simple effect on an element to give it an inset effect.
+										</div>
+
+                                    </div>
                                 </div>
 					</div><!-- /.page-content -->
 				</div>

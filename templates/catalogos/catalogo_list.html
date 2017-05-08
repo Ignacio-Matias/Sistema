@@ -672,36 +672,76 @@
 						<!-- /section:settings.box -->
                         <div class="row">
 
-							<div class="col-xs-12">
+							<div class="col-md-12">
 								<!-- PAGE CONTENT BEGINS -->
 								<div class="row">
-									<div class="col-sm-12">
+									<div class="col-md-7">
                                        <a href="{% url 'catalogos:catalogo_nuevo' %}">
                                        <button class="btn btn-xs btn-primary pull-right">
                                             <i class="ace-icon fa fa-plus align-top bigger-125"></i>
                                             Agregar
                                         </button></a><br><br>
-													<table class="table table-bordered">
+													<table class="table table-bordered table-striped" id="tabla_cat">
                                                         <thead>
                                                             <tr>
-                                                                <td>id</td>
-                                                                <td>descripcion</td>
-                                                                <td>Acciones</td>
+                                                                <td class="center">#</td>
+                                                                <td>Descripcion</td>
+                                                                <td class="center">Acciones</td>
                                                             </tr>
 
                                                         </thead>
                                                         <tbody>
                                                             {% if object_list %}
                                                             {% for catalogo in object_list %}
-                                                            <tr>
-                                                                <td>{{ catalogo.id }}</td>
-                                                                <td><a href="#"> {{ catalogo.descripcion }} </a></td>
-                                                                <td>
-                                                                    <div class="hidden-sm hidden-xs btn-xs btn-group">
+                                                            <tr id="tr{{ catalogo.id }}">
+                                                                <td class="center">{{ catalogo.id }}</td>
+                                                                <td class="green">{{ catalogo.descripcion }}</td>
+                                                                <td class="hidden-480 center">
+																	<a href="{% url 'catalogos:catalogo_editar' catalogo.id %}"><span class="label label-info arrowed-right arrowed-in">editar <i class="ace-icon fa fa-pencil bigger-120"></i></span></a>
+																	<a href="#modal{{ catalogo.id }}" role="button" data-toggle="modal" id="{{ catalogo.id }}" data-name="{{ catalogo.descripcion }}"><span class="label label-danger arrowed-right arrowed-in">eliminar <i class="ace-icon fa fa-trash bigger-120"></i></span></a>
 
-                                                                        <a class= "btn btn-xs btn-info" href="{% url 'catalogos:catalogo_editar' catalogo.id %}"><i class="ace-icon fa fa-pencil bigger-120"></i></a>
-                                                                        <a class= "btn btn-xs btn-danger" href="{% url 'catalogos:catalogo_eliminar' catalogo.id %}"><i class="ace-icon fa fa-trash-o bigger-120"></i></a>
-                                                                    </div>
+                                                                    <!--Modal -->
+                                                                        <div class="modal fade" id="modal{{ catalogo.id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                                                          <div class="modal-dialog" role="document">
+                                                                            <div class="modal-content">
+                                                                              <div class="modal-header">
+                                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                                                <h4 class="modal-title" id="myModalLabel">Eliminar Registro</h4>
+                                                                              </div>
+                                                                              <div class="modal-body">
+                                                                                <p>¿Realmente desea eliminar el registro {{ catalogo.descripcion }}?</p>
+                                                                              </div>
+                                                                              <div class="modal-footer">
+                                                                                <!--<form method="post" id="frmEliminar">
+                                                                                    {% csrf_token %} -->
+                                                                                    <input type="hidden" id="modal_idEliminar" name="idEliminar">
+                                                                                    <button type="button" class="btn btn-default" data-dismiss="modal">cerrar</button>
+                                                                                    <button onclick="eliminarIdentificador('{{ catalogo.id }}')" class="btn btn-danger">Eliminar</button>
+                                                                                <!-- </form> -->
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                        </div>
+                                                                    <!-- final modal-->
+
+                                                                    <script type="text/javascript">
+                                                                        function eliminarIdentificador(catalogodescripcion) {
+                                                                            var request = $.ajax({
+                                                                                type: "POST",
+                                                                                url: "{% url 'catalogos:eliminar_identificador' %}",
+                                                                                data: {
+                                                                                    "csrfmiddlewaretoken": "{{ csrf_token }}",
+                                                                                    "identificador_id": catalogodescripcion
+                                                                                },
+                                                                            });
+                                                                            request.done(function(response) {
+                                                                                alert("registro eliminado");
+                                                                                location.reload();
+                                                                                // Cierra el modal, oculta el identificador eliminado, etc.
+                                                                            });
+                                                                        }
+                                                                    </script>
+
                                                                 </td>
                                                             </tr>
                                                             {% endfor %}
@@ -711,6 +751,7 @@
                                                             {% endif %}
                                                         </tbody>
                                                     </table>
+
                                                     <ul class="pager">
                                                         <li>
                                                             {% if page_obj.has_previous %}
@@ -724,11 +765,21 @@
                                                         </li>
                                                     </ul>
 									</div><!-- /.col -->
+                                    <div class="col-md-5">
+                                        <br><br>
+                                        <div class="well">
+											<h4 class="green smaller lighter">Normal Well</h4>
+											Use the well as a simple effect on an element to give it an inset effect.
+										</div>
+
+                                    </div>
                                 </div>
 					</div><!-- /.page-content -->
 				</div>
-			</div><!-- /.main-content -->
 
+			</div><!-- /.main-content -->
+            <!-- inline scripts related to this page -->
 		</div><!-- /.main-container -->
 	</body>
 {% endblock %}
+

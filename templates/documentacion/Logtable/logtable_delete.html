@@ -467,7 +467,7 @@
 						<b class="arrow"></b>
 
 						<ul class="submenu">
-							<li class="active">
+							<li class="">
 								<a href="#">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Credenciales
@@ -512,7 +512,7 @@
 								<b class="arrow"></b>
 							</li>
 
-                            <li class="">
+                            <li class="active">
 								<a href="#">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Logo
@@ -553,7 +553,7 @@
 							<li>
 								<a href="#">Documentacion</a>
 							</li>
-							<li class="active">Credenciales</li>
+							<li class="active">LogTable</li>
 						</ul><!-- /.breadcrumb -->
 
 						<!-- #section:basics/content.searchbox -->
@@ -663,10 +663,10 @@
                         <!-- /section:settings.box -->
 						<div class="page-header">
 							<h1>
-								Credenciales
+								LogTable
 								<small>
 									<i class="ace-icon fa fa-angle-double-right"></i>
-									Eliminar Credencial
+									Eliminar
 								</small>
 							</h1>
 						</div><!-- /.page-header -->
@@ -678,9 +678,9 @@
 								<!-- PAGE CONTENT BEGINS -->
                                 <form method="post">
                                     {% csrf_token %}
-                                    <h3>¿Desea eliminar el usuario <b>{{ object.usuario }}</b>?</h3>
+                                    <h3>¿Desea eliminar el registro <b>{{ object.usuario_id }}</b>?</h3>
                                     <button class="btn btn-xs btn-danger" type="submit">Sí, eliminar</button>
-                                    <a class= "btn btn-xs btn-default" href="{% url 'documentacion:credencial_listar' %}">Cancelar</a>
+                                    <a class= "btn btn-xs btn-default" href="{% url 'documentacion:logtable_listar' %}">Cancelar</a>
                                 </form>
 								<!-- PAGE CONTENT ENDS -->
 							</div><!-- /.col -->

@@ -676,9 +676,10 @@
 						<div class="row">
 							<div class="col-xs-12">
 								<!-- PAGE CONTENT BEGINS -->
-                                <form method="post" action="" enctype="multipart/form-data">
+                                <form method="post" enctype="multipart/form-data">
                                     {% csrf_token %}
-                                   {{form.archivoDescripcion}}
+                                    <br>
+                                    <input type="file" name="archivoDescripcion"/>
                                     <div class="clearfix form-actions">
 										<div class="col-md-offset-4 col-md-9">
 											<button class="btn btn-xs btn-info" type="submit">

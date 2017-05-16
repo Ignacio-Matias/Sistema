@@ -1,14 +1,18 @@
 from django.shortcuts import render, redirect
 from django.core.urlresolvers import reverse_lazy
 from django.views.generic import ListView, CreateView, UpdateView, DeleteView
+from django.views.generic import TemplateView
 
 from apps.docuamentacion.forms import *
 from apps.docuamentacion.models import *
+from apps.catalogos.models import *
 
 # credenciales
 def credenciales_list(request):
 	credencial = credenciales.objects.all().order_by('id')
-	contexto = {'credenciales':credencial}
+	credencial2 = credenciales.objects.filter().order_by("-id")[:4]
+	tecnologia = cat_tecnologias.objects.filter().order_by("-id")[:4]
+	contexto = {'credenciales':credencial, 'crede':credencial2, 'tecno':tecnologia}
 	return render(request, 'documentacion/Credenciales/credenciales_list.html', contexto)
 
 def credenciales_view(request):
@@ -33,10 +37,12 @@ class credenciales_delete(DeleteView):
 	success_url = reverse_lazy('documentacion:credencial_listar')
 
 # ficha
-class Fichas_list(ListView):
-	model = ficha
-	template_name = 'documentacion/Fichas/fichas_list.html'
-	paginate_by = 5
+def Fichas_list(request):
+	ficha_li = ficha.objects.all().order_by('id')
+	ficha_li2 = ficha.objects.filter().order_by("-id")[:4]
+	credencial2 = credenciales.objects.filter().order_by("-id")[:4]
+	contexto = {'object_list': ficha_li, 'object_list2': ficha_li2, 'crede':credencial2}
+	return render(request, 'documentacion/Fichas/fichas_list.html', contexto)
 
 class Fichas_view(CreateView):
 	model = ficha
@@ -56,10 +62,12 @@ class Fichas_delete(DeleteView):
 	success_url = reverse_lazy('documentacion:ficha_listar')
 
 # equipo_ficha
-class Equipo_Fichas_list(ListView):
-	model = equipo_ficha
-	template_name = 'documentacion/Equipo Ficha/equipo_ficha_list.html'
-	paginate_by = 2
+def Equipo_Fichas_list(request):
+	Eficha = equipo_ficha.objects.all().order_by('id')
+	Eficha2 = equipo_ficha.objects.filter().order_by("-id")[:4]
+	especialidad = equipo_ficha.objects.order_by('cat_especialidad_id_id').distinct('cat_especialidad_id_id')[:4]
+	contexto = {'object_list': Eficha, 'object_list2': Eficha2, 'especialidad':especialidad}
+	return render(request, 'documentacion/Equipo Ficha/equipo_ficha_list.html', contexto)
 
 class  Equipo_Fichas_view(CreateView):
 	model = equipo_ficha
@@ -78,10 +86,24 @@ class Equipo_Fichas_delete(DeleteView):
 	template_name = 'documentacion/Equipo Ficha/equipo_ficha_delete.html'
 	success_url = reverse_lazy('documentacion:equipo_ficha_listar')
 
+class Equipo_Ficha_search(TemplateView):
+	def post(self, request, *args, **kwargs):
+		buscar = request.POST['buscalo']
+		#origficha = ficha.objects.get(nombre=buscar)
+		#fichas = origficha.nombre_set.all()
+		#fichas = ficha.objects.filter(equipo_ficha__ficha_id__nombre__istartswith=buscar)
+		fichas = equipo_ficha.objects.filter(ficha_id__nombre=buscar)
+		Eficha2 = equipo_ficha.objects.filter().order_by("-id")[:4]
+		especialidad = equipo_ficha.objects.order_by('cat_especialidad_id_id').distinct('cat_especialidad_id_id')[:4]
+		print(fichas)
+		return render(request, 'documentacion/Equipo Ficha/equipo_ficha_busc.html', {'fichass':fichas, 'object_list2': Eficha2, 'especialidad':especialidad})
+
 # ficha_cat_tecnologias
 def ficha_cat_tecnologias_list(request):
 	ficha_tec = ficha_cat_tecnologias.objects.all().order_by('id')
-	contexto = {'ficha_tecno': ficha_tec}
+	fichatec = ficha_cat_tecnologias.objects.filter().order_by("-id")[:4]
+	tecnologia = cat_tecnologias.objects.filter().order_by("-id")[:4]
+	contexto = {'ficha_tecno': ficha_tec, 'fichatec': fichatec, 'tecnolo': tecnologia}
 	return render(request, 'documentacion/Ficha_Tecnologias/ficha_tecnologia_list.html', contexto)
 
 class ficha_cat_tecnologias_view(CreateView):
@@ -104,7 +126,9 @@ class ficha_cat_tecnologias_delete(DeleteView):
 # documento_archivo
 def documento_archivo_list(request):
 	documento = documento_archivo.objects.all().order_by('id')
-	contexto = {'documentos': documento}
+	documento2 = documento_archivo.objects.filter().order_by("-id")[:4]
+	ficha = documento_archivo.objects.order_by('ficha_id').distinct('ficha_id')[:4]
+	contexto = {'documentos': documento, 'documentos2':documento2, 'ficha':ficha}
 	return render(request, 'documentacion/Documentos/documento_list.html', contexto)
 
 class documento_archivo_view(CreateView):
@@ -127,7 +151,8 @@ class documento_archivo_delete(DeleteView):
 # logtable
 def logtable_list(request):
 	logtab = logtable.objects.all().order_by('id')
-	contexto = {'logtable': logtab}
+	logtab2 = logtable.objects.filter().order_by("-id")[:4]
+	contexto = {'logtable': logtab, 'logtable2':logtab2}
 	return render(request, 'documentacion/Logtable/logtable_list.html', contexto)
 
 class logtable_view(CreateView):

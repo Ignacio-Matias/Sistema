@@ -675,7 +675,7 @@
 							<div class="col-xs-12">
 								<!-- PAGE CONTENT BEGINS -->
 								<div class="row">
-									<div class="col-md-7">
+									<div class="col-md-9">
                                        <a href="{% url 'catalogos:estatus_nuevo' %}">
                                        <button class="btn btn-xs btn-primary pull-right">
                                             <i class="ace-icon fa fa-plus align-top bigger-125"></i>
@@ -721,13 +721,33 @@
                                                         </li>
                                                     </ul>
 									</div><!-- /.col -->
-                                     <div class="col-md-5">
+                                     <div class="col-md-3">
                                         <br><br>
-                                        <div class="well">
-											<h4 class="green smaller lighter">Normal Well</h4>
-											Use the well as a simple effect on an element to give it an inset effect.
-										</div>
+                                        <div class="widget-box">
+											<div class="widget-header widget-header-flat widget-header-small">
+												<h5 class="widget-title">
+													Ultimos Registros de Estatus
+												</h5>
+											</div>
 
+											<div class="widget-body">
+												<div class="widget-main">
+                                                <ul class="list-unstyled spaced">
+                                                    {% if estatus2 %}
+                                                            {% for estatus in estatus2 %}
+                                                                <li class="muted">
+																	<i class="ace-icon fa fa-angle-right bigger-110"></i>
+																	{{ estatus.descripcion }}
+																</li>
+
+                                                            {% endfor %}
+                                                            {% else %}
+                                                            <h5>No se encontraron registros</h5>
+                                                    {% endif %}
+                                                </ul>
+												</div><!-- /.widget-main -->
+											</div><!-- /.widget-body -->
+                                        </div><!-- /.widget-box -->
                                     </div>
                                 </div>
 					</div><!-- /.page-content -->

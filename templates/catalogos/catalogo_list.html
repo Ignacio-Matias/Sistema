@@ -675,7 +675,7 @@
 							<div class="col-md-12">
 								<!-- PAGE CONTENT BEGINS -->
 								<div class="row">
-									<div class="col-md-7">
+									<div class="col-md-9">
                                        <a href="{% url 'catalogos:catalogo_nuevo' %}">
                                        <button class="btn btn-xs btn-primary pull-right">
                                             <i class="ace-icon fa fa-plus align-top bigger-125"></i>
@@ -685,7 +685,7 @@
                                                         <thead>
                                                             <tr>
                                                                 <td class="center">#</td>
-                                                                <td>Descripcion</td>
+                                                                <td width="500">Descripcion</td>
                                                                 <td class="center">Acciones</td>
                                                             </tr>
 
@@ -706,7 +706,7 @@
                                                                             <div class="modal-content">
                                                                               <div class="modal-header">
                                                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                                                <h4 class="modal-title" id="myModalLabel">Eliminar Registro</h4>
+                                                                                  <h4 class="modal-title" id="myModalLabel"><b>Eliminar Registro</b></h4>
                                                                               </div>
                                                                               <div class="modal-body">
                                                                                 <p>¿Realmente desea eliminar el registro {{ catalogo.descripcion }}?</p>
@@ -765,12 +765,35 @@
                                                         </li>
                                                     </ul>
 									</div><!-- /.col -->
-                                    <div class="col-md-5">
+
+                                    <div class="col-md-3">
                                         <br><br>
-                                        <div class="well">
-											<h4 class="green smaller lighter">Normal Well</h4>
-											Use the well as a simple effect on an element to give it an inset effect.
-										</div>
+                                       <div class="widget-box">
+											<div class="widget-header widget-header-flat widget-header-small">
+												<h5 class="widget-title">
+													Ultimos Registros de Catalogos
+												</h5>
+											</div>
+
+											<div class="widget-body">
+												<div class="widget-main">
+                                                <ul class="list-unstyled spaced">
+                                                    {% if object_list2 %}
+                                                            {% for catalogo in object_list2 %}
+                                                                <li class="muted">
+																	<i class="ace-icon fa fa-angle-right bigger-110"></i>
+																	{{ catalogo.descripcion }}
+																</li>
+
+                                                            {% endfor %}
+                                                            {% else %}
+                                                            <h1>No se encontraron registros</h1>
+                                                    {% endif %}
+                                                </ul>
+												</div><!-- /.widget-main -->
+											</div><!-- /.widget-body -->
+                                       </div><!-- /.widget-box -->
+									</div><!-- /.col -->
 
                                     </div>
                                 </div>
@@ -780,6 +803,8 @@
 			</div><!-- /.main-content -->
             <!-- inline scripts related to this page -->
 		</div><!-- /.main-container -->
+            </div>
+        </div>
 	</body>
 {% endblock %}
 

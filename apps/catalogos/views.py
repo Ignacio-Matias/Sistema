@@ -19,7 +19,8 @@ def catalogo_view(request):
 
 def catalogo_list(request):
     cat_li = cat_tipo.objects.all().order_by('id')
-    contexto = {'object_list':cat_li}
+    cat_li2 = cat_tipo.objects.filter().order_by("-id")[:4]
+    contexto = {'object_list':cat_li, 'object_list2':cat_li2}
     return render(request, 'catalogos/catalogo_list.html', contexto)
 
 class catalogo_update(UpdateView):
@@ -36,7 +37,9 @@ class catalogo_delete(DeleteView):
 # cat_tecnologias
 def tecnologia_list(request):
     tecnologia = cat_tecnologias.objects.all().order_by('id')
-    contexto = {'tecnologias':tecnologia}
+    tecnologia2 = cat_tecnologias.objects.filter().order_by("-id")[:4]
+    cat_li2 = cat_tipo.objects.filter().order_by("-id")[:4]
+    contexto = {'tecnologias':tecnologia, 'object_list2':tecnologia2, 'object_list3':cat_li2}
     return render(request, 'catalogos/Tecnologias/tecnologias_list.html', contexto)
 
 def tecnologia_view(request):
@@ -90,7 +93,8 @@ class persona_delete(DeleteView):
 # cat_especialidad
 def especialidad_list(request):
     especialidad = cat_especialidad.objects.all().order_by('id')
-    contexto = {'especialidades':especialidad}
+    especialidad2 = cat_especialidad.objects.filter().order_by("-id")[:4]
+    contexto = {'especialidades':especialidad,'espec':especialidad2}
     return render(request, 'catalogos/Especialidades/especialidad_list.html', contexto)
 
 def especialidad_view(request):
@@ -117,7 +121,8 @@ class especialidad_delete(DeleteView):
 # cat_estatus
 def estatus_list(request):
     estatus = cat_estatus.objects.all().order_by('id')
-    contexto = {'estatus':estatus}
+    estatus2 = cat_estatus.objects.filter().order_by("-id")[:4]
+    contexto = {'estatus':estatus, 'estatus2':estatus2}
     return render(request, 'catalogos/Estatus/estatus_list.html', contexto)
 
 def estatus_view(request):
@@ -144,7 +149,8 @@ class estatus_delete(DeleteView):
 # cat_documentos
 def documentos_list(request):
     documento = cat_documentos.objects.all().order_by('id')
-    contexto = {'documentos':documento}
+    documento2 = cat_documentos.objects.filter().order_by("-id")[:4]
+    contexto = {'documentos':documento, 'documentos2':documento2}
     return render(request, 'catalogos/Documentos/documentos_list.html', contexto)
 
 def documentos_view(request):

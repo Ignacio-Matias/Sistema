@@ -675,7 +675,7 @@
 							<div class="col-xs-12">
 								<!-- PAGE CONTENT BEGINS -->
 								<div class="row">
-									<div class="col-md-7">
+									<div class="col-md-9">
                                        <a href="{% url 'catalogos:documentos_nuevo' %}">
                                        <button class="btn btn-xs btn-primary pull-right">
                                             <i class="ace-icon fa fa-plus align-top bigger-125"></i>
@@ -718,12 +718,37 @@
                                                     </table>
 
 									</div><!-- /.col -->
-                                    <div class="col-md-5">
+                                    <div class="col-md-3">
                                         <br><br>
-                                        <div class="well">
-											<h4 class="green smaller lighter">Normal Well</h4>
-											Use the well as a simple effect on an element to give it an inset effect.
-										</div>
+                                        <div class="widget-box">
+											<div class="widget-header widget-header-flat widget-header-small">
+												<h5 class="widget-title">
+													Ultimos Registros de Documentos
+												</h5>
+											</div>
+
+											<div class="widget-body">
+												<div class="widget-main">
+                                                <ul class="list-unstyled spaced">
+                                                    {% if documentos2 %}
+                                                            {% for document in documentos2 %}
+                                                                <li class="muted">
+																	<i class="ace-icon fa fa-angle-right bigger-110"></i>
+																	{% if document.archivoDescripcion %}
+                                                                        <img src="{{ document.archivoDescripcion.url }}" width="25px"> <a href="{{ document.archivoDescripcion.url }}"> {{ document.archivoDescripcion }} </a>
+                                                                    {% else %}
+                                                                    <h4>No hay Documento</h4>
+                                                                    {% endif %}
+																</li>
+
+                                                            {% endfor %}
+                                                            {% else %}
+                                                            <h1>No se encontraron registros</h1>
+                                                    {% endif %}
+                                                </ul>
+												</div><!-- /.widget-main -->
+											</div><!-- /.widget-body -->
+                                       </div><!-- /.widget-box -->
 
                                     </div>
                                 </div>

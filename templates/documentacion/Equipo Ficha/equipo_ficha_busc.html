@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 
-{% block title %}Tipo de Catalogo{% endblock %}
+{% block title %}Documentación | Equipo Fichas{% endblock %}
 {% block content %}
 	<body class="no-skin">
 		<!-- #section:basics/navbar.layout -->
@@ -28,7 +28,7 @@
 					<a href="#" class="navbar-brand">
 						<small>
 							<i class="fa fa-leaf"></i>
-							CMAIG
+							Ace Admin
 						</small>
 					</a>
 
@@ -389,7 +389,7 @@
 				</div><!-- /.sidebar-shortcuts -->
 
 				<ul class="nav nav-list">
-					<li class="activate open">
+					<li class="">
                         <a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-laptop"></i>
 							<span class="menu-text"> Catalogos </span>
@@ -418,7 +418,7 @@
 								<b class="arrow"></b>
 							</li>
 
-                            <li class="active">
+                            <li class="">
 								<a href="{% url 'catalogos:persona_listar' %}">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Personas
@@ -457,7 +457,7 @@
 					</li>
 
 
-					<li class="">
+					<li class="activate open">
                         <a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-folder-o"></i>
 							<span class="menu-text"> Documentacion </span>
@@ -486,7 +486,7 @@
 								<b class="arrow"></b>
 							</li>
 
-                            <li class="">
+                            <li class="active">
 								<a href="{% url 'documentacion:equipo_ficha_listar' %}">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Equipo Ficha
@@ -552,16 +552,17 @@
 							</li>
 
 							<li>
-								<a href="#">Catalogos</a>
+								<a href="#">Documentacion</a>
 							</li>
-							<li class="active">Personas</li>
+							<li class="active">Equipo Ficha</li>
 						</ul><!-- /.breadcrumb -->
 
 						<!-- #section:basics/content.searchbox -->
 						<div class="nav-search" id="nav-search">
-							<form class="form-search">
+							<form action="{% url 'documentacion:equipo_ficha_buscar' %}" method="post" class="form-search">
+                                {% csrf_token %}
 								<span class="input-icon">
-									<input type="text" placeholder="Buscar ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+									<input type="text"  name="buscalo" placeholder="Buscar ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
 									<i class="ace-icon fa fa-search nav-search-icon"></i>
 								</span>
 							</form>
@@ -664,7 +665,7 @@
                         <!-- /section:settings.box -->
 						<div class="page-header">
 							<h1>
-								Catalogos <small>Catalogos de Personas</small>
+								Equipo Ficha <small>Lista de Equipo Ficha</small>
 							</h1>
 						</div><!-- /.page-header -->
 
@@ -672,87 +673,114 @@
 						<!-- /section:settings.box -->
                         <div class="row">
 
-							<div class="col-xs-12">
+							<div class="col-md-12">
 								<!-- PAGE CONTENT BEGINS -->
 								<div class="row">
-									<div class="col-md-8">
-                                       <a href="{% url 'catalogos:persona_nuevo' %}">
+									<div class="col-md-9">
+                                       <a href="{% url 'documentacion:equipo_ficha_nuevo' %}">
                                        <button class="btn btn-xs btn-primary pull-right">
                                             <i class="ace-icon fa fa-plus align-top bigger-125"></i>
                                             Agregar
                                         </button></a><br><br>
-                                                    <table class="table table-bordered table-striped">
+													<table class="table table-bordered">
                                                         <thead>
                                                             <tr>
-                                                                <td class="center">#</td>
-                                                                <td>Tipo de contacto</td>
-                                                                <td class="center">Acciones</td>
+                                                                <td>Ficha</td>
+                                                                <td>Persona</td>
+                                                                <td>Especialidad</td>
+                                                                <td>Acciones</td>
                                                             </tr>
 
                                                         </thead>
                                                         <tbody>
-                                                            {% if personas %}
-                                                            {% for persona in personas %}
+                                                            {% if fichass %}
+                                                            {% for ficha in fichass %}
                                                             <tr>
-                                                                <td class="center">{{ persona.puc_id }}</td>
-                                                                <td class="blue">{{ persona.tipo }}</td>
-                                                                <td class="hidden-480 center">
-																	<a href="{% url 'catalogos:persona_editar' persona.id %}"><span class="label label-info arrowed-right arrowed-in">editar <i class="ace-icon fa fa-pencil bigger-120"></i></span></a>
-																	<a href="{% url 'catalogos:persona_eliminar' persona.id %}"><span class="label label-danger arrowed-right arrowed-in">eliminar <i class="ace-icon fa fa-trash bigger-120"></i></span></a>
+                                                                <td class="orange">{{ ficha.ficha_id }}</td>
+                                                                <td>{{ ficha.cat_personas_id }}</td>
+                                                                <td class="green">{{ ficha.cat_especialidad_id }}</td>
+                                                                <td class="center" width="200">
+																	<a href="{% url 'documentacion:equipo_ficha_editar' ficha.id %}"><span class="label label-info arrowed-right arrowed-in">editar <i class="ace-icon fa fa-pencil bigger-120"></i></span></a>
+																	<a href="{% url 'documentacion:equipo_ficha_eliminar' ficha.id %}"><span class="label label-danger arrowed-right arrowed-in">eliminar <i class="ace-icon fa fa-trash bigger-120"></i></span></a>
 																</td>
                                                             </tr>
                                                             {% endfor %}
 
                                                             {% else %}
-                                                            <h1>No hay registros de catalogos</h1>
+                                                            <h1>No hay registros</h1>
                                                             {% endif %}
                                                         </tbody>
                                                     </table>
-                                                    <ul class="pager">
-                                                        <li>
-                                                            {% if page_obj.has_previous %}
-                                                             <a href="?page={{ page_obj.previous_page_number }}">Anterior</a>
-                                                            {% endif %}
-                                                            </li>
-                                                        <li>
-                                                            {% if page_obj.has_next %}
-                                                             <a href="?page={{ page_obj.next_page_number }}">Siguente</a>
-                                                            {% endif %}
-                                                        </li>
-                                                    </ul>
+                                        <p><code>distinct()</code> Devuelve un nuevo QuerySetque utiliza en su consulta SQL. Esto elimina filas duplicadas de los resultados de la consulta.SELECT DISTINCT ></p>
 									</div><!-- /.col -->
-                                    <div class="col-md-4">
+                                    <div class="col-md-3">
                                         <br><br>
                                         <div class="widget-box">
 											<div class="widget-header widget-header-flat widget-header-small">
 												<h5 class="widget-title">
-													Tipos de Contactos
+													Nuevos Registros
 												</h5>
+                                                <div class="widget-toolbar">
+													<a href="#" data-action="collapse">
+														<i class="ace-icon fa fa-chevron-up"></i>
+													</a>
+												</div>
 											</div>
 
 											<div class="widget-body">
-                                                <div class="widget-main">
-                                                    <ul class="list-unstyled">
-                                                <li>
-                                                    <i class="ace-icon fa fa-check bigger-110 green"></i>
-                                                    DGTIC
-                                                </li>
-                                                <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
-                                                <li>
-                                                    <i class="ace-icon fa fa-check bigger-110 green"></i>
-                                                    CONTACTO
-                                                </li>
-                                                <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
-                                            </ul>
+												<div class="widget-main">
+                                                <ul class="list-unstyled spaced">
+                                                    {% if object_list2 %}
+                                                            {% for ef in object_list2 %}
+                                                                <li class="muted orange">
+																	<i class="ace-icon fa fa-angle-right bigger-110"></i>
+																	{{ ef.ficha_id }}
+																</li>
+
+                                                            {% endfor %}
+                                                            {% else %}
+                                                            <h4>No se encontraron registros</h4>
+                                                    {% endif %}
+                                                </ul>
 												</div><!-- /.widget-main -->
 											</div><!-- /.widget-body -->
-                                        </div><!-- /.widget-box -->
+                                       </div><!-- /.widget-box -->
+                                       <br>
+                                       <div class="widget-box">
+											<div class="widget-header widget-header-flat widget-header-small">
+												<h5 class="widget-title">
+													Ultimas Especialidades Utilizadas
+												</h5>
+                                                <div class="widget-toolbar">
+													<a href="#" data-action="collapse">
+														<i class="ace-icon fa fa-chevron-up"></i>
+													</a>
+												</div>
+											</div>
+
+											<div class="widget-body">
+												<div class="widget-main">
+                                                <ul class="list-unstyled spaced">
+                                                    {% if especialidad %}
+                                                            {% for espe in especialidad %}
+                                                                <li class="muted green">
+																	<i class="ace-icon fa fa-angle-right bigger-110"></i>
+																	{{ espe.cat_especialidad_id }}
+																</li>
+
+                                                            {% endfor %}
+                                                            {% else %}
+                                                            <h4>No se encontraron registros</h4>
+                                                    {% endif %}
+                                                </ul>
+												</div><!-- /.widget-main -->
+											</div><!-- /.widget-body -->
+                                       </div><!-- /.widget-box -->
                                     </div>
                                 </div>
 					</div><!-- /.page-content -->
 				</div>
 			</div><!-- /.main-content -->
-
 		</div><!-- /.main-container -->
 	</body>
 {% endblock %}

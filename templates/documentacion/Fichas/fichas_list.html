@@ -672,10 +672,10 @@
 						<!-- /section:settings.box -->
                         <div class="row">
 
-							<div class="col-xs-12">
+							<div class="col-md-12">
 								<!-- PAGE CONTENT BEGINS -->
 								<div class="row">
-									<div class="col-sm-12">
+									<div class="col-md-9">
                                        <a href="{% url 'documentacion:ficha_nuevo' %}">
                                        <button class="btn btn-xs btn-primary pull-right">
                                             <i class="ace-icon fa fa-plus align-top bigger-125"></i>
@@ -687,7 +687,6 @@
                                                                 <td>Nombre</td>
                                                                 <td>Estatus</td>
                                                                 <td>URL</td>
-                                                                <td>GIT</td>
                                                                 <td>Tipo Uso</td>
                                                                 <td>Credencial</td>
                                                                 <td>Acciones</td>
@@ -698,25 +697,21 @@
                                                             {% if object_list %}
                                                             {% for ficha in object_list %}
                                                             <tr>
-                                                                <td>{{ ficha.nombre }}</td>
+                                                                <td class="orange">{{ ficha.nombre }}</td>
                                                                 <td>{{ ficha.cat_estatus_id }}</td>
                                                                 <td>{{ ficha.url }}</td>
-                                                                <td>{{ ficha.git }}</td>
                                                                 <td>{{ ficha.tipouso }}</td>
-                                                                <td>
+                                                                <td class="blue">
                                                                     {% for credencial in ficha.credencial_id.all %}
                                                                         <li>
                                                                         {{credencial.usuario}}
                                                                         </li>
                                                                     {% endfor %}
                                                                 </td>
-                                                                <td>
-                                                                    <div class="hidden-sm hidden-xs btn-xs btn-group">
-
-                                                                        <a class= "btn btn-xs btn-info" href="{% url 'documentacion:ficha_editar' ficha.id %}"><i class="ace-icon fa fa-pencil bigger-120"></i></a>
-                                                                        <a class= "btn btn-xs btn-danger" href="{% url 'documentacion:ficha_eliminar' ficha.id %}"><i class="ace-icon fa fa-trash-o bigger-120"></i></a>
-                                                                    </div>
-                                                                </td>
+                                                                <td class="center" width="200">
+																	<a href="{% url 'documentacion:ficha_editar' ficha.id %}"><span class="label label-info arrowed-right arrowed-in">editar <i class="ace-icon fa fa-pencil bigger-120"></i></span></a>
+																	<a href="{% url 'documentacion:ficha_eliminar' ficha.id %}"><span class="label label-danger arrowed-right arrowed-in">eliminar <i class="ace-icon fa fa-trash bigger-120"></i></span></a>
+																</td>
                                                             </tr>
                                                             {% endfor %}
 
@@ -725,56 +720,85 @@
                                                             {% endif %}
                                                         </tbody>
                                                     </table>
-                                                    <ul class="pager">
-                                                        <li>
-                                                            {% if page_obj.has_previous %}
-                                                             <a href="?page={{ page_obj.previous_page_number }}">Anterior</a>
-                                                            {% endif %}
-                                                            </li>
-                                                        <li>
-                                                            {% if page_obj.has_next %}
-                                                             <a href="?page={{ page_obj.next_page_number }}">Siguente</a>
-                                                            {% endif %}
-                                                        </li>
-                                                    </ul>
 									</div><!-- /.col -->
+                                    <div class="col-md-3">
+                                        <br><br>
+                                        <div class="widget-box">
+											<div class="widget-header widget-header-flat widget-header-small">
+												<h5 class="widget-title">
+													Nuevos Registros
+												</h5>
+                                                <div class="widget-toolbar">
+													<a href="#" data-action="collapse">
+														<i class="ace-icon fa fa-chevron-up"></i>
+													</a>
+												</div>
+											</div>
+
+											<div class="widget-body">
+												<div class="widget-main">
+                                                <ul class="list-unstyled spaced">
+                                                    {% if object_list2 %}
+                                                            {% for f in object_list2 %}
+                                                                <li class="muted orange">
+																	<i class="ace-icon fa fa-angle-right bigger-110"></i>
+																	{{ f.nombre }}
+																</li>
+
+                                                            {% endfor %}
+                                                            {% else %}
+                                                            <h4>No se encontraron registros</h4>
+                                                    {% endif %}
+                                                </ul>
+												</div><!-- /.widget-main -->
+											</div><!-- /.widget-body -->
+                                       </div><!-- /.widget-box -->
+                                       <br>
+                                        <div class="widget-box">
+											<div class="widget-header widget-header-flat widget-header-small">
+												<h5 class="widget-title">
+													Nuevas Credenciales
+												</h5>
+                                                <div class="widget-toolbar">
+													<a href="#" data-action="collapse">
+														<i class="ace-icon fa fa-chevron-up"></i>
+													</a>
+												</div>
+											</div>
+
+											<div class="widget-body">
+												<div class="widget-main">
+                                                <table class="table editable-slider">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>#</td>
+                                                            <td>Usuario</td>
+                                                            <td>Nombre</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        {% if crede %}
+                                                            {% for crede in crede %}
+                                                                <tr>
+                                                                    <td class="green">{{ crede.id }}</td>
+                                                                    <td class="blue">{{ crede.usuario }}</td>
+                                                                    <td class="red">{{ crede.nombre }}</td>
+                                                                </tr>
+                                                            {% endfor %}
+                                                            {% else %}
+                                                            <h4>No se encontraron registros</h4>
+                                                        {% endif %}
+                                                    </tbody>
+                                                </table>
+												</div><!-- /.widget-main -->
+											</div><!-- /.widget-body -->
+                                       </div><!-- /.widget-box -->
+                                    </div>
                                 </div>
 					</div><!-- /.page-content -->
 				</div>
 			</div><!-- /.main-content -->
 
-			<div class="footer">
-				<div class="footer-inner">
-					<!-- #section:basics/footer -->
-					<div class="footer-content">
-						<span class="bigger-120">
-							<span class="blue bolder">Ace</span>
-							Application &copy; 2013-2014
-						</span>
-
-						&nbsp; &nbsp;
-						<span class="action-buttons">
-							<a href="#">
-								<i class="ace-icon fa fa-twitter-square light-blue bigger-150"></i>
-							</a>
-
-							<a href="#">
-								<i class="ace-icon fa fa-facebook-square text-primary bigger-150"></i>
-							</a>
-
-							<a href="#">
-								<i class="ace-icon fa fa-rss-square orange bigger-150"></i>
-							</a>
-						</span>
-					</div>
-
-					<!-- /section:basics/footer -->
-				</div>
-			</div>
-
-			<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
-				<i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
-			</a>
 		</div><!-- /.main-container -->
 	</body>
 {% endblock %}

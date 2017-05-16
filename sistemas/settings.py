@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'apps.catalogos',
     'apps.docuamentacion',
     'apps.usuario',
+    'apps.webServices.wsCatalogos',
 ]
 
 MIDDLEWARE_CLASSES = [

@@ -675,7 +675,7 @@
 							<div class="col-xs-12">
 								<!-- PAGE CONTENT BEGINS -->
 								<div class="row">
-									<div class="col-sm-12">
+									<div class="col-sm-9">
                                        <a href="{% url 'documentacion:credencial_nuevo' %}">
                                        <button class="btn btn-xs btn-primary pull-right">
                                             <i class="ace-icon fa fa-plus align-top bigger-125"></i>
@@ -684,7 +684,8 @@
 													<table class="table table-bordered">
                                                         <thead>
                                                             <tr>
-                                                                <td>Tecnologias</td>
+                                                                <td>#</td>
+                                                                <td>Tecnologia</td>
                                                                 <td>Usuario</td>
                                                                 <td>Host</td>
                                                                 <td>Nombre</td>
@@ -697,18 +698,16 @@
                                                             {% if credenciales %}
                                                             {% for credencial in credenciales %}
                                                             <tr>
-                                                                <td><a href="{% url 'catalogos:tecnologia_listar' %}"> {{ credencial.cat_tipo_id }}</a></td>
+                                                                <td class="center">{{ credencial.id }}</td>
+                                                                <td><a href="{% url 'catalogos:tecnologia_listar' %}"  class="green"> {{ credencial.cat_tipo_id }}</a></td>
                                                                 <td><a href="{% url 'documentacion:credencial_editar' credencial.id %}"> {{ credencial.usuario }} </a></td>
                                                                 <td>{{ credencial.host }}</td>
-                                                                <td>{{ credencial.nombre }}</td>
+                                                                <td class="red">{{ credencial.nombre }}</td>
                                                                 <td>{{ credencial.puerto }}</td>
-                                                                <td>
-                                                                    <div class="hidden-sm hidden-xs btn-xs btn-group">
-
-                                                                        <a class= "btn btn-xs btn-info" href="{% url 'documentacion:credencial_editar' credencial.id %}"><i class="ace-icon fa fa-pencil bigger-120"></i></a>
-                                                                        <a class= "btn btn-xs btn-danger" href="{% url 'documentacion:credencial_eliminar' credencial.id %}"><i class="ace-icon fa fa-trash-o bigger-120"></i></a>
-                                                                    </div>
-                                                                </td>
+                                                                <td class="hidden-480 center">
+																	<a href="{% url 'documentacion:credencial_editar' credencial.id %}"><span class="label label-info arrowed-right arrowed-in">editar <i class="ace-icon fa fa-pencil bigger-120"></i></span></a>
+																	<a href="{% url 'documentacion:credencial_eliminar' credencial.id %}"><span class="label label-danger arrowed-right arrowed-in">eliminar <i class="ace-icon fa fa-trash bigger-120"></i></span></a>
+																</td>
                                                             </tr>
                                                             {% endfor %}
 
@@ -718,43 +717,74 @@
                                                         </tbody>
                                                     </table>
 									</div><!-- /.col -->
+                                    <div class="col-md-3">
+                                        <br><br>
+                                       <div class="widget-box">
+											<div class="widget-header widget-header-flat widget-header-small">
+												<h5 class="widget-title">
+													Nuevos Registros
+												</h5>
+											</div>
+
+											<div class="widget-body">
+												<div class="widget-main">
+                                                <table class="table editable-slider">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>#</td>
+                                                            <td>Usuario</td>
+                                                            <td>Nombre</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        {% if crede %}
+                                                            {% for crede in crede %}
+                                                                <tr>
+                                                                    <td class="green">{{ crede.id }}</td>
+                                                                    <td class="blue">{{ crede.usuario }}</td>
+                                                                    <td class="red">{{ crede.nombre }}</td>
+                                                                </tr>
+                                                            {% endfor %}
+                                                            {% else %}
+                                                            <h1>No se encontraron registros</h1>
+                                                        {% endif %}
+                                                    </tbody>
+                                                </table>
+												</div><!-- /.widget-main -->
+											</div><!-- /.widget-body -->
+                                       </div><!-- /.widget-box -->
+                                       <br>
+                                    <div class="widget-box">
+											<div class="widget-header widget-header-flat widget-header-small">
+												<h5 class="widget-title">
+													Nuevas Tecnologias
+												</h5>
+											</div>
+
+											<div class="widget-body">
+												<div class="widget-main">
+                                                <ul class="list-unstyled spaced">
+                                                    {% if tecno %}
+                                                            {% for tec in tecno %}
+                                                                <li class="muted green">
+																	<i class="ace-icon fa fa-angle-right bigger-110"></i>
+																	{{ tec.descripcion }}
+																</li>
+
+                                                            {% endfor %}
+                                                            {% else %}
+                                                            <h4>No se encontraron registros</h4>
+                                                    {% endif %}
+                                                </ul>
+												</div><!-- /.widget-main -->
+											</div><!-- /.widget-body -->
+                                       </div><!-- /.widget-box -->
+									</div><!-- /.col -->
+
                                 </div>
 					</div><!-- /.page-content -->
 				</div>
 			</div><!-- /.main-content -->
-
-			<div class="footer">
-				<div class="footer-inner">
-					<!-- #section:basics/footer -->
-					<div class="footer-content">
-						<span class="bigger-120">
-							<span class="blue bolder">Ace</span>
-							Application &copy; 2013-2014
-						</span>
-
-						&nbsp; &nbsp;
-						<span class="action-buttons">
-							<a href="#">
-								<i class="ace-icon fa fa-twitter-square light-blue bigger-150"></i>
-							</a>
-
-							<a href="#">
-								<i class="ace-icon fa fa-facebook-square text-primary bigger-150"></i>
-							</a>
-
-							<a href="#">
-								<i class="ace-icon fa fa-rss-square orange bigger-150"></i>
-							</a>
-						</span>
-					</div>
-
-					<!-- /section:basics/footer -->
-				</div>
-			</div>
-
-			<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
-				<i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
-			</a>
 		</div><!-- /.main-container -->
 	</body>
 {% endblock %}
